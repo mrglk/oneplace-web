@@ -1,0 +1,249 @@
+.select {
+  cursor: pointer;
+  color: var(--black);
+  width: 100%;
+  letter-spacing: -0.01em;
+  width: 100%;
+}
+
+.select--active {
+  border-radius: 4px 4px 0 0;
+  z-index: 10;
+  color: var(--brown);
+  backdrop-filter: none;
+
+  background-color: var(--white);
+}
+
+.select__inner {
+  display: flex;
+  align-items: center;
+}
+
+.select__currentValue {
+  white-space: nowrap;
+    overflow: hidden;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.select__arrowIcon {
+  flex-shrink: 0;
+  margin-left: 40px;
+  width: 25px;
+  height: 25px;
+}
+
+/* .select__arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 200px;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  margin-left: 40px;
+  transition: background-color 0.1s ease, border-color 0.1s ease;
+}
+
+.select__arrowIcon {
+  fill: var(--black);
+  width: 10px;
+  transition: fill 0.1s ease;
+}
+
+.select:hover .select__arrow {
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+
+.select:hover .select__arrowIcon {
+  fill: var(--white);
+} */
+
+.select__content {
+  max-width: 159px;
+  width: 100%;
+}
+
+.select__caption {
+  font-family: 'Garet Book', sans-serif;
+  color: var(--grey);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.select__options {
+  position: absolute;
+  text-align: center;
+
+  bottom: 200%;
+  left: 0;
+  width: 100%;
+    max-height: 255px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 10;
+
+  transition: opacity 200ms ease;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.select__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 20px 16px;
+  width: 100%;
+  border: 1px solid var(--blue);
+  background-color: var(--white);
+  border-radius: 60px;
+  transition: background-color 100ms ease, border-color 100ms ease, 
+}
+
+.select__option:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.select__option:hover {
+  background-color: #EEEEEE;
+}
+
+.select__option--active {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
+
+.select__option--active:hover {
+  background-color: var(--gold);
+}
+
+/* .select.select__option:hover .select__arrow {
+  border-color: var(--black);
+  background-color: var(--white);
+} */
+.select--active .select__options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+@media screen and (max-width: 1700px) {
+  .select__content {
+    max-width: 145px;
+  }
+  .select__currentValue {
+    font-size: 20px;
+  }
+  .select__arrowIcon {
+    margin-left: 30px;
+  }
+
+  /* .select__arrow {
+    margin-left: 20px;
+  } */
+
+  .select__caption {
+    margin-bottom: 7px;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+  .select__options {
+    bottom: 141%;
+  }
+
+  .select__inner {
+   width: 100%;
+   justify-content: space-between;
+  }
+  .select__content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .select__caption {
+    font-size: 14px;
+  }
+
+  .select__arrowIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* .select__arrow {
+    width: 22px;
+    height: 22px;
+  } */
+
+  /* .select__arrowIcon {
+    width: 10px;
+  } */
+
+  /* .select:hover .select__arrow {
+    background-color: var(--white);
+    border-color: var(--black);
+  }
+  
+  .select:hover .select__arrowIcon {
+    fill: var(--black);
+  }
+
+  .select:active .select__arrow {
+    background-color: var(--gold);
+    border-color: var(--gold);
+  }
+  
+  .select:active .select__arrowIcon {
+    fill: var(--white);
+  } */
+}
+
+@media screen and (max-width: 480px) {
+.select__option {
+  font-size: 16px;
+  padding: 10px 13px;
+}
+
+  .select__caption {
+    font-size: 12px;
+  }
+
+  .select__currentValue {
+    font-size: 16px;
+}
+
+.select__arrowIcon {
+  width: 19px;
+  height: 19px;
+}
+
+/* .select__arrow {
+  width: 19px;
+  height: 19px;
+} */
+
+/* .select__arrowIcon {
+  width: 9px;
+} */
+}

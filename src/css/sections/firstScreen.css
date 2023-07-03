@@ -1,0 +1,388 @@
+.firstScreen {
+    position: relative;
+    border-radius: 24px;
+    padding-top: 169px;
+    margin-top: 20px;
+    margin-bottom: 210px;
+    width: 100%;
+}
+
+.firstScreen__imgWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*height: 100%;*/
+    border-radius: 24px;
+    overflow: hidden;
+    transform: translateZ(0);
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.firstScreen__imgWrapper--active {
+    opacity: 1;
+}
+
+.firstScreen__imgWrapper:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #292F3B;
+    opacity: 0.30;
+    /* border-radius: 24px; */
+    z-index: 1;
+}
+
+.firstScreen__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;  
+}
+
+.firstScreen__inner {
+    /* position: relative; */
+    width: 100%;
+    /* z-index: 2; */
+}
+
+.firstScreen__slide--active {
+    display: flex;
+}
+
+.firstScreen__top {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 128px;
+    min-height: 300px;
+    opacity: 0;
+    /* transition: opacity 300ms ease-in; */
+}
+
+.firstScreen__top--active {
+   position: relative;
+    opacity: 1;
+}
+
+.firstScreen__headerWrapper,
+.firstScreen__descriptionWrapper {
+    position: relative;
+}
+
+.firstScreen__header {
+    color: var(--white);
+    max-width: 1020px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0 0 30px 0;
+}
+
+.firstScreen__description {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+}
+
+/* .firstScreen__header br:last-child,
+.firstScreen__header :nth-child(2) {
+    display: none;
+} */
+
+.firstScreen__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.firstScreen__leafButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.firstScreen__leafText {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+    /* margin: 0 12px 0 0; */
+    margin: 0;
+    /* z-index: 1; */
+}
+
+/* .firstScreen__leafIcon {
+    width: 24px;
+    height: 39px;
+} */
+
+.firstScreen__sliderButtons {
+    display: flex;
+}
+
+.firstScreen__sliderButton:first-child {
+    margin-right: 10px;
+}
+
+.firstScreen__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 30px 0;
+    border-radius: 115px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(50%);
+}
+
+.firstScreen__input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.firstScreen__input:not(:last-child):after {
+    position: absolute;
+    content: '';
+    height: 44px;
+    width: 1.3px;
+    background-color: var(--grey);
+    opacity: 0.3;
+    top: calc(50% - 22px);
+    right: 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .firstScreen {
+        padding-top: 164px;
+        margin-bottom: 180px;
+        max-height: 640px;
+    }
+
+    .firstScreen__top {
+        margin-bottom: 66px;
+        min-height: 266px;
+    }
+
+    .firstScreen__leafText {
+        font-size: 16px;
+    }
+/* 
+    .firstScreen__leafIcon {
+        width: 22.22px;
+        height: 35.56px;
+    } */
+
+    .firstScreen__form {
+        border-radius: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transform: translateY(30%);
+    }
+
+    .firstScreen__input:not(:last-child) {
+        width: 24.5%;
+    }
+
+    .firstScreen__input:last-child {
+        width: 26.5%;
+    }
+
+    .firstScreen__button {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .firstScreen {
+    margin-bottom: 290px;
+    max-height: 850px;
+}
+    .firstScreen__form {
+        flex-direction: column;
+        transform: translateY(10%);
+        border-radius: 24px;
+        padding: 30px 40px;
+    }
+
+    .firstScreen__form .firstScreen__input {
+        width: 100%;
+    }
+
+    .firstScreen__input:not(:last-child):after {
+        display: none;
+    }
+
+    .firstScreen__input:not(:last-child) {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #9A9A9A4D;
+    }
+
+    .firstScreen__button {
+        margin: 15px 0 0 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .firstScreen__top {
+        min-height: 253px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .firstScreen {
+        padding-top: 176px;
+        margin-bottom: 268px;
+        max-height: 800px;
+    }
+
+    .firstScreen__imgWrapper {
+        border-radius: 16px;
+    }
+
+    .firstScreen__top {
+        margin-bottom: 100px;
+        min-height: 196px;
+    }
+
+    .firstScreen__header {
+        color: var(--white);
+        max-width: 584px;
+    }
+
+    .firstScreen__description {
+        font-size: 20px;
+    }
+
+    .firstScreen__leafText {
+        font-size: 14px;
+    }
+
+    /* .firstScreen__leafIcon {
+        width: 17px;
+        height: 27px;
+    } */
+
+}
+
+@media screen and (max-width: 680px) {
+    .firstScreen {
+        padding-top: 124px;
+        max-height: 720px;
+    }
+
+    .firstScreen__top {
+        align-items: center;
+        margin-bottom: 20px;
+        min-height: 273px;
+    }
+
+    .firstScreen__header {
+        text-align: center;
+        max-width: 442px;
+        margin-bottom: 20px;
+    }
+
+    /* .firstScreen__header :nth-child(2),
+    .firstScreen__header br:last-child {
+        display: inline;
+    } */
+
+    .firstScreen__description {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .firstScreen__bottom {
+        justify-content: center;
+    }
+
+    .firstScreen__leafButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .firstScreen {
+        padding-top: 63px;
+        margin-bottom: 170px;
+        max-height: 590px;
+    }
+    .firstScreen__form {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .firstScreen__top {
+        min-height: 191px;
+        margin-bottom: 15px;
+    }
+
+
+    .firstScreen__header {
+        font-size: 28px;
+        max-width: 300px;
+        margin-bottom: 10px;
+
+    }
+
+    .firstScreen__description {
+        font-size: 14px;
+    }
+    .firstScreen__sliderButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .firstScreen__button {
+        margin: 0;
+        }
+    
+        .firstScreen__form {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            transform: translateY(6%);
+        }
+
+        .firstScreen__input:not(:last-child) {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+}
+
+@media screen and (max-width: 350px) {
+    .firstScreen {
+        margin-bottom: 200px;
+    }
+}
+
+
+@media screen and (max-width: 335px) {
+    .firstScreen {
+        margin-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .firstScreen {
+        margin-bottom: 300px;
+    }
+}

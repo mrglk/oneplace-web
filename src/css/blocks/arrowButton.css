@@ -1,0 +1,79 @@
+.arrowButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    background-color: var(--white);
+    width: 54px;
+    height: 54px;
+    border-radius: 200px;
+    padding: 0;
+    border: 1px solid #DDE6ED80;
+    filter: drop-shadow(0px 1px 12px rgba(0, 0, 0, 0.1));
+    transition: background-color 80ms ease, color 80ms ease;
+}
+
+.arrowButton:hover,
+.arrowButton--active {
+    background-color: var(--gold);
+}
+
+.arrowButton__icon {
+    stroke: var(--black);
+    width: 6px;
+    height: 8px;
+    transition: stroke 80ms ease, color 80ms ease;
+}
+
+.arrowButton__icon--bigger {
+    width: 9px;
+    height: 16px;
+}
+
+.arrowButton__icon--back {
+    transform: rotate(180deg);
+}
+
+.arrowButton:hover .arrowButton__icon,
+.arrowButton--active .arrowButton__icon {
+    stroke: var(--white);
+}
+
+@media screen and (max-width: 950px) {
+    .arrowButton {
+        width: 44px;
+        height: 44px;
+    }
+
+    .arrowButton__icon {
+        width: 5px;
+    }
+
+    .arrowButton:hover {
+        background-color: var(--white);
+    }    
+
+    .arrowButton:hover .arrowButton__icon {
+        stroke: var(--black);
+    }
+
+    .arrowButton:active {
+        background-color: var(--gold);
+    }
+
+    .arrowButton:active .arrowButton__icon {
+        stroke: var(--white);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .arrowButton--smallerOnMobile {
+        width: 36px;
+        height: 36px;
+    }
+
+    .arrowButton--smallerOnMobile .arrowButton__icon {
+        width: 4px;
+    }
+}

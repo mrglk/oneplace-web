@@ -1,0 +1,308 @@
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 24px;
+    padding: 30px 30px 30px 50px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.contacts__left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.contacts__right {
+    width: 50%;
+}
+
+.contacts__header {
+    margin: 20px 0 42px 0;
+}
+
+.contacts__buttons {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.contacts__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid rgba(154, 154, 154, 0.25);
+    border-radius: 50px;
+    padding: 16px 32px;
+    min-width: 165px;
+    font-size: 18px;
+    color: var(--black);
+
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+.contacts__button:hover,
+.contacts__button--active {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+}
+
+.contacts__button:not(:last-child) {
+    margin-right: 20px;
+}
+
+.contacts__dataCity {
+    display: none;
+    flex-direction: column;
+}
+
+.contacts__dataCity--active {
+    display: flex;
+}
+
+.contacts__dataItem {
+    display: flex;
+    gap: 10px;
+}
+
+.contacts__dataCell {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    max-width: 420px;
+    width: 50%;
+}
+
+.contacts__dataCell:first-child:last-child {
+    width: 100%;
+}
+
+.contacts__dataItem:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.contacts__dataItemTitle {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contacts__dataItemTitleIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contacts__dataItemTitleText {
+    margin: 0;
+    color: var(--gold);
+    font-size: 18px;
+}
+
+.contacts__dataItemText {
+    color: var(--black);
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0;
+    text-decoration: none;
+}
+
+.contacts__dataItemLink {
+    position: relative;
+    text-decoration: none;
+}
+
+.contacts__dataItemLink::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    display: block;
+    transition: all 0.2s ease 0s;
+    width: 0px;
+    height: 1px;
+    background-color: currentcolor;
+}
+
+.contacts__dataItemLink:hover::after {
+    width: 100%;
+    left: 0px;
+}
+
+@media screen and (max-width: 1700px) {
+    .contacts__inner {
+        padding: 40px;
+    }
+
+    .contacts__left {
+        width: 51%;
+    }
+
+    .contacts__right {
+        width: 49%;
+    }
+
+
+    .contacts__header {
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+
+    .contacts__dataCell {
+        max-width: 385px;
+        min-width: auto;
+    }
+
+
+    .contacts__buttons {
+        margin-bottom: 60px;
+    }
+
+    .contacts__button:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .contacts__dataItemText {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .contacts__inner {
+        flex-direction: column;
+    }
+
+    .contacts__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+
+    .contacts__right {
+        width: 100%;
+    }
+
+    .contacts__dataCity {
+        align-items: center;
+    }
+
+    .contacts__dataCell {
+        align-items: center;
+    }
+
+    .contacts__dataItemText {
+        text-align: center;
+    }
+
+    .contacts__form h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contacts__inner {
+        padding: 40px 30px 30px 30px;
+    }
+
+    .contacts__buttons {
+        margin-bottom: 40px;
+    }
+
+    .contacts__button {
+        padding: 12px 22px;
+        min-width: 127px;
+        font-size: 14px;
+    }
+
+    .contacts__dataItemTitle {
+        margin-bottom: 12px;
+    }
+
+    .contacts__dataItemTitleIcon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contacts__dataItemTitleText {
+        font-size: 14px;
+    }
+
+    .contacts__dataItemText {
+        font-size: 20px;
+    }
+
+    .contacts__dataItem:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .contacts__dataCell {
+    max-width: 300px;
+}
+}
+
+@media screen and (max-width: 580px) {
+
+    .contacts__buttonsWrapper {
+        display: flex;
+        width: calc(100% + 40px);
+        overflow: hidden;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 32px;
+    }
+
+    .contacts__buttonsWrapperLayer {
+        position: relative;
+        overflow-x: auto;
+        margin-bottom: -20px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .contacts__buttons {
+        display: inline-flex;
+        margin: 0 20px;
+    }
+
+    .contacts__button {
+        flex-shrink: 0;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts__inner {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .contacts__dataItem {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contacts__dataCell {
+        width: 100%;
+    }
+
+    .contacts__dataItemTitleIcon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contacts__dataItemTitleText {
+        font-size: 14px;
+    }
+
+    .contacts__dataItemText {
+        font-size: 20px;
+    }
+
+    .contacts__dataItem:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

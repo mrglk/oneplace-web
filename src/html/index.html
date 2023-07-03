@@ -1,0 +1,2220 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+    <title>Oneplace</title>
+    <style>
+        .burgerMenu {
+            visibility: hidden
+        }
+
+        .overlay {
+            opacity: 0
+        }
+
+        select {
+            display: none;
+        }
+
+        .animatedButton__contentHovered {
+            transform: translateY(100%)
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="container__row container__row--extraWide">
+            <div class="header">
+                <div class="container__row container__row--wide">
+                    <div class="header__inner">
+                        <div class="header__left">
+                            <button class="header__burgerButton js-burger-menu-button">
+                                <svg class="header__burgerIcon">
+                                    <use href="./spritemap.svg#icon-burger" />
+                                </svg>
+                            </button>
+                            <div class="header__logo">
+                                <a href="./index.html">
+                                    <svg class="header__logoIcon">
+                                        <use href="./spritemap.svg#icon-logo" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__center">
+                            <nav class="header__nav">
+                                <a href="#projects" class="header__navLink">Каталог</a>
+                                <a href="#about" class="header__navLink">О компании</a>
+                                <a href="#advantages" class="header__navLink">Преимущества</a>
+                                <a href="#map" class="header__navLink">Районы Дубая</a>
+                                <a href="#news" class="header__navLink">Новости</a>
+                            </nav>
+                        </div>
+                        <div class="header__right">
+                            <a href="#" class="header__lang">EN</a>
+                            <a href="tel:+97140000000" class="header__phone">
+                                <div class="header__phoneIconWrapper">
+                                    <svg class="header__phoneIcon">
+                                        <use href="./spritemap.svg#icon-tel-icon" />
+                                    </svg>
+                                </div>
+                                <p>+971 (4) 000-00-00</p>
+                            </a>
+                            <div class="header__socials">
+                                <a href="#" target="_blank" class="header__socialLink">
+                                    <svg class="header__socialIcon">
+                                        <use href="./spritemap.svg#icon-tg-icon" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="header__socialLink">
+                                    <svg class="header__socialIcon">
+                                        <use href="./spritemap.svg#icon-wa-icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="burgerMenu js-burger-menu">
+                    <div class="burgerMenu__inner">
+                        <div class="burgerMenu__top">
+                            <p class="burgerMenu__title">Меню</p>
+                            <div class="closeButton js-burger-close"></div>
+                        </div>
+                        <nav class="burgerMenu__nav">
+                            <button class="burgerMenu__link js-open-quiz-modal">Подобрать недвижимость</button>
+                            <a href="#about" class="burgerMenu__link">О компании</a>
+                            <a href="#founders" class="burgerMenu__link">Основатели</a>
+                            <a href="#projects" class="burgerMenu__link">Каталог</a>
+                            <a href="#advantages" class="burgerMenu__link">Наши преимущества</a>
+                            <a href="#map" class="burgerMenu__link">Районы Дубая</a>
+                            <a href="#news" class="burgerMenu__link">Новости</a>
+                            <a href="#reviews" class="burgerMenu__link">Отзывы и кейсы клиентов</a>
+                            <a href="#faq" class="burgerMenu__link">Вопрос-ответ</a>
+                            <a href="#contacts" class="burgerMenu__link">Контакты</a>
+                        </nav>
+                        <div class="burgerMenu__bottom">
+                            <div class="burgerMenu__socials">
+                                <a href="#" class="burgerMenu__socialLink">
+                                    <svg class="burgerMenu__socialIcon">
+                                        <use href="./spritemap.svg#icon-tg-icon" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="burgerMenu__socialLink">
+                                    <svg class="burgerMenu__socialIcon">
+                                        <use href="./spritemap.svg#icon-wa-icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="tel:+971564099445" class="burgerMenu__phone">
+                                <div class="burgerMenu__phoneTop">
+                                    <svg class="burgerMenu__phoneIcon">
+                                        <use href="./spritemap.svg#icon-tel-icon" />
+                                    </svg>
+                                    <p class="burgerMenu__phoneText">Телефон</p>
+                                </div>
+                                <p class="burgerMenu__phoneNumber">+971 56 409 9445</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="container__row container__row--extraWide">
+                <div class="firstScreen js-first-slider">
+                    <div class="container__row container__row--static container__row--inner container__row--static">
+                        <div class="firstScreen__inner">
+                            <div class="firstScreen__imagesContainer js-first-slider-images">
+                                <div class="firstScreen__imgWrapper firstScreen__imgWrapper--active imageWrapper">
+                                    <picture>
+                                        <source media="(max-width: 950px)" src="../img/first-screen-bg-tablet.webp"
+                                            type="image/webp">
+                                        <source media="(max-width: 950px)" src="../img/first-screen-bg-tablet.jpg">
+                                        <source src="../img/first-screen-bg.webp" type="image/webp">
+                                        <source src="../img/first-screen-bg.jpg">
+                                        <img class="firstScreen__img image image__zoom js-image"
+                                            data-class="image__zoom--out" src="../img/first-screen-bg.jpg" alt="Dubai"
+                                            loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="firstScreen__imgWrapper imageWrapper">
+                                    <img class="firstScreen__img image image__zoom js-image"
+                                        data-class="image__zoom--out" src="../img/quiz-img.jpg" alt="Dubai"
+                                        loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="firstScreen__top firstScreen__top--active js-first-slider-text">
+                                <h1 class="firstScreen__header title js-title" data-class="title--shown">Подбор и покупка <br />недвижимости в&nbsp;Дубае<br />
+                                    с доходностью от&nbsp;25% в год</h1>
+                                <p class="firstScreen__description title js-title" data-class="title--shown">
+                                    Лучшие предложения от $ 134.000</p>
+                            </div>
+                            <div class="firstScreen__top js-first-slider-text">
+                                <h1 class="firstScreen__header title js-title" data-class="title--shown">Продаем
+                                    квартиры <br />для жизни и инвестиций в Дубае</h1>
+                                <p class="firstScreen__description title js-title" data-class="title--shown">
+                                    Самые лучшие предложения от $ 134.000</p>
+                            </div>
+
+                            <div class="firstScreen__bottom">
+                                <button class="firstScreen__leafButton js-leaf-button">
+                                    <p class="firstScreen__leafText">Листать вниз</p>
+                                    <div class="mouseWrapper">
+                                        <span class="mouse">
+                                            <span class="mouse__dot">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </button>
+                                <div class="firstScreen__sliderButtons ">
+                                    <button class="firstScreen__sliderButton arrowButton js-first-slider-prev">
+                                        <svg class="arrowButton__icon arrowButton__icon--back">
+                                            <use href="./spritemap.svg#icon-arrow" />
+                                        </svg>
+                                    </button>
+                                    <button class="firstScreen__sliderButton arrowButton js-first-slider-next">
+                                        <svg class="arrowButton__icon arrowButton__icon--next">
+                                            <use href="./spritemap.svg#icon-arrow" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="firstScreen__form">
+
+                                <div class="firstScreen__input">
+                                    <div class="selectWrapper">
+                                        <svg class="selectWrapper__icon">
+                                            <use href="./spritemap.svg#icon-select-house-icon" />
+                                        </svg>
+                                        <select name="type" class="js-select js-select-type"
+                                            data-label="Тип недвижимости">
+                                            <option value="Apartments">Апартаменты</option>
+                                            <option value="Villa">Вилла</option>
+                                            <option value="Taunhaus">Таунхаус</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="firstScreen__input">
+                                    <div class="selectWrapper">
+                                        <svg class="selectWrapper__icon">
+                                            <use href="./spritemap.svg#icon-select-geo-icon" />
+                                        </svg>
+                                        <select name="type" class="js-select js-select-district" data-label="Район">
+                                            <option value="Marina">Dubai Marina</option>
+                                            <option value="Creek">Dubai Creek Harbour</option>
+                                            <option value="Palm">Palm Jumeirah</option>
+                                            <option value="Walk">City Walk</option>
+                                            <option value="Emaar">Emaar Beachfront</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="firstScreen__input">
+                                    <div class="selectWrapper">
+                                        <svg class="selectWrapper__icon">
+                                            <use href="./spritemap.svg#icon-select-dollar-icon" />
+                                        </svg>
+                                        <select name="type" class="js-select js-select-purpose"
+                                            data-label="Цель покупки">
+                                            <option value="Investments">Инвестиции</option>
+                                            <option value="Life">Для жизни</option>
+                                            <option value="Other">Другое</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="firstScreen__input">
+                                    <div class="firstScreen__button animatedButton buttonWrapper js-open-modal"
+                                        data-modal="getConsultation">
+                                        <button class="animatedButton__content button" data-modal="#">Подобрать
+                                            недвижимость</button>
+                                        <button class="animatedButton__contentHovered button" data-modal="#">Подобрать
+                                            недвижимость</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects container container__hiddenOverflowOnMobile" id="projects">
+            <div class="container__row">
+                <div class="projects__inner">
+                    <div class="projects__top">
+                        <h2 class="projects__header title js-title" data-class="title--shown">Популярные <br />обьекты в
+                            Дубае</h2>
+                        <div class="projects__filtersWrapper">
+                            <div class="projects__filtersWrapperLayer">
+                                <div class="projects__filters js-project-filter">
+                                    <button class="projects__filter filterButton filterButton--active" data-type="apartments">
+                                        <svg class="filterButton__icon filterButton__icon--bigger">
+                                            <use href="./spritemap.svg#icon-apartments-icon" />
+                                        </svg>
+                                        <span class="filterButton__text">Апартаменты</span>
+                                    </button>
+                                    <button class="projects__filter filterButton" data-type="taunhouses">
+                                        <svg class="filterButton__icon">
+                                            <use href="./spritemap.svg#icon-taunhause-icon" />
+                                        </svg>
+                                        <span class="filterButton__text">Таунхаусы</span>
+                                    </button>
+                                    <button class="projects__filter filterButton" data-type="villas">
+                                        <svg class="filterButton__icon">
+                                            <use href="./spritemap.svg#icon-villa-icon" />
+                                        </svg>
+                                        <span class="filterButton__text">Виллы</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects__slider">
+                        <div class="slider">
+                            <div class="slider__button slider__button--left js-project-slider-prev">
+                                <button class="arrowButton">
+                                    <svg class="arrowButton__icon arrowButton__icon--back">
+                                        <use href="./spritemap.svg#icon-arrow" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="slider__content js-project-slider">
+                                <div class="swiper-wrapper js-project-data">
+                                    <div data-type="villas" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-1.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="taunhouses" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-2.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="apartments" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-3.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="villas" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-1.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="taunhouses" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-2.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="apartments" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-3.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="villas" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-1.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="taunhouses" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-2.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="apartments" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-3.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="villas" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-1.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="taunhouses" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-2.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-type="apartments" class="projectItem swiper-slide js-open-apartment-modal"
+                                        data-id="#" data-modal="apartmentData">
+                                        <div class="projectItem__imgWrapper">
+                                            <img class="projectItem__img" alt="Object" src="/public/project-3.jpg">
+                                        </div>
+                                        <div class="projectItem__description">
+                                            <div class="projectItem__geo">
+                                                <svg class="projectItem__geoIcon">
+                                                    <use href="./spritemap.svg#icon-slider-geo-icon" />
+                                                </svg>
+                                                <p class="projectItem__geoText">Golf Views, Jumeirah Lakes Towers</p>
+                                            </div>
+                                            <p class="projectItem__title">2-спальные апартаменты</p>
+                                            <p class="projectItem__price">358 920</p>
+                                            <div class="projectItem__data">
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg class="projectItem__dataIcon">
+                                                            <use href="./spritemap.svg#icon-slider-room-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">2 спальни</p>
+                                                </div>
+                                                <div class="projectItem__dataItem">
+                                                    <div class="projectItem__dataIconWrapper">
+                                                        <svg
+                                                            class="projectItem__dataIcon projectItem__dataIcon--square">
+                                                            <use href="./spritemap.svg#icon-slider-area-icon" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="projectItem__dataText">120 м2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__button slider__button--right js-project-slider-next">
+                                <button class="arrowButton">
+                                    <svg class="arrowButton__icon arrowButton__icon">
+                                        <use href="./spritemap.svg#icon-arrow" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="about container" id="about">
+            <div class="container__row">
+                <div class="about__inner">
+                    <div class="about__left">
+                        <p class="about__title">(О компании)</p>
+                        <h2 class="about__header title js-title" data-class="title--shown">Продаем квартиры для&nbsp;жизни и&nbsp;инвестиций в&nbsp;Дубае</h2>
+                        <div class="about__text">
+                            <p class="about__textColumn js-text-lines" data-class="lines--shown">Компания
+                                на&nbsp;протяжении
+                                6&nbsp;лет работает
+                                с&nbsp;надёжными застройщиками и&nbsp;свободно ориентируется в&nbsp;недвижимости Дубая.
+                                Мы&nbsp;ценим своего клиента и&nbsp;работаем
+                                по&nbsp;принципу индивидуального подхода. Каждый запрос уникален, поэтому брокеры
+                                компании
+                                анализируют специфику районов, проектов и&nbsp;ценовых категорий исходя из&nbsp;ваших
+                                предпочтений.</p>
+                            <p class="about__textColumn js-text-lines" data-class="lines--shown">Наши
+                                сотрудники&nbsp;&mdash; одни
+                                из&nbsp;лучших экспертов на&nbsp;рынке, а&nbsp;клиенты
+                                возвращаются к&nbsp;нам вновь и&nbsp;приводят своих друзей. Мы&nbsp;гордимся кейсами
+                                компании: от&nbsp;нас
+                                ещё никто не&nbsp;уходил без покупки недвижимости мечты. Работаем без комиссии.
+                                Обращайтесь,
+                                и&nbsp;наши специалисты подберут вам идеальный вариант недвижимости под вашу цель.</p>
+                        </div>
+                        <div class="about__button">
+                            <div class="animatedButton animatedButton--fullSize buttonWrapper js-open-quiz-modal"
+                            data-modal="quiz">
+                                <button class="animatedButton__content button">Получить
+                                    консультацию</button>
+                                <button class="animatedButton__contentHovered button">Получить
+                                    консультацию</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__imgWrapper imageWrapper">
+                            <picture>
+                                <source media="(max-width: 1200px)"
+                                    srcset="/img/about-tablet-1x.webp, /img/about-tablet-2x.webp 2x" type="image/webp">
+                                <source media="(max-width: 1200px)"
+                                    srcset="/img/about-tablet-1x.jpg, /img/about-tablet-2x.jpg 2x">
+                                <source srcset="/img/about-1x.webp, /img/about-2x.webp 2x" type="image/webp">
+                                <source srcset="/img/about-1x.jpg, /img/about-2x.jpg 2x">
+                                <img class="about__img image image__zoom js-image" data-class="image__zoom--out"
+                                    src="/img/about-1x.jpg" alt="Oranges" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="founders container">
+            <div class="container__row container__row--extraWide">
+                <div class="founders__background">
+                    <div class="container__row container__row--inner">
+                        <div class="founders__inner">
+                            <div class="founders__item">
+                                <div class="founders__left">
+                                    <div class="founders__imageAndAnimation">
+                                        <div class="founders__imgWrapper js-founder-img-wrapper">
+                                            <img class="founders__img founders__img--mock" alt="Дмитрий Сибилев" src="../img/founder-1.jpg">
+                                            <img class="founders__img js-founders-img-slide founders__img--active" alt="Дмитрий Сибилев" src="../img/founder-1.jpg">
+                                            <img class="founders__img js-founders-img-slide" alt="Дмитрий Сибилев" src="../img/founder-2.jpg">
+                                            <div class="founders__imgProgress">
+                                                <div class="founders__imgProgressFiller js-founder-progress"></div>
+                                            </div>
+                                        </div>
+                                        <div class="founders__animation">
+                                            <img class="founders__animationText" src="../img/founders-animation.png">
+                                            <img src="../img/founders-icon.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="founders__right" id="founders">
+                                    <div class="founders__rightContent">
+
+                                        <div class="founders__textContent js-founders-content-slide founders__textContent--active">
+                                            <p class="founders__title">(Основатели)</p>
+                                            <h2 class="founders__name title js-title" data-class="title--shown">Дмитрий
+                                                Сибилев</h2>
+                                            <p class="founders__position js-text-lines" data-class="lines--shown">
+                                                Эксперт по недвижимости Дубая</p>
+                                            <div class="founders__quote">
+                                                <p class="js-text-lines" data-class="lines--shown">
+                                                    За&nbsp;моими плечами успешный опыт работы брокером, 250
+                                                    сделок в&nbsp;год, более 1000 довольных клиентов, сотни отзывов
+                                                    о&nbsp;моей работе. 
+                                                </p>
+                                                <p class="js-text-lines" data-class="lines--shown">Этот опыт позволяет
+                                                    мне выстраивать качественные бизнес-процессы в&nbsp;компании
+                                                    ONEPLACE, заботимся о&nbsp;них, чтобы
+                                                    наши клиенты всегда оставались довольными.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="founders__textContent js-founders-content-slide">
+                                            <p class="founders__title">(Основатели)</p>
+                                            <h2 class="founders__name title js-title" data-class="title--shown">Дмитрий
+                                                Сибилев</h2>
+                                            <p class="founders__position js-text-lines" data-class="lines--shown">
+                                                Эксперт по недвижимости Дубая</p>
+                                            <div class="founders__quote">
+                                                <p class="js-text-lines" data-class="lines--shown">
+                                                    За&nbsp;моими плечами многолетний успешный опыт работы брокером, 250
+                                                    сделок в&nbsp;год, более 1000 довольных клиентов, сотни отзывов
+                                                    о&nbsp;моей работе.
+                                                </p>
+                                                <p class="js-text-lines" data-class="lines--shown">Этот опыт позволяет
+                                                    мне выстраивать качественные бизнес-процессы в&nbsp;компании
+                                                    ONEPLACE, чтобы наши клиенты оставались довольны нами.
+                                                    Мы&nbsp;делаем упор на&nbsp;сотрудников, заботимся о&nbsp;них, чтобы
+                                                    наши клиенты всегда оставались довольными.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="founders__foundersButtons">
+                                            <button class="founders__founderButton founders__founderButton--active js-founders-button">
+                                                <img class="founders__founderButtonImg" alt="Дмитрий Сибилев"
+                                                    src="../img/founder-1.jpg">
+                                            </button>
+                                            <button class="founders__founderButton js-founders-button">
+                                                <img class="founders__founderButtonImg" alt="Андрей Павлов"
+                                                    src="../img/founder-2.jpg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="founders__sliderButtons">
+                                        <button
+                                            class="founders__sliderButton arrowButton arrowButton--smallerOnMobile js-founders-slider-prev">
+                                            <svg
+                                                class="arrowButton__icon arrowButton__icon--bigger arrowButton__icon--back">
+                                                <use href="./spritemap.svg#icon-arrow-bigger" />
+                                            </svg>
+                                        </button>
+                                        <button
+                                            class="founders__sliderButton arrowButton arrowButton--smallerOnMobile js-founders-slider-next">
+                                            <svg
+                                                class="arrowButton__icon arrowButton__icon--bigger arrowButton__icon--next">
+                                                <use href="./spritemap.svg#icon-arrow-bigger" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer container" id="offer">
+            <div class="container__row offer__row">
+                <div class="offer__inner">
+                    <div class="offer__content">
+                        <div class="offer__contentTop">
+                            <p class="offer__title">(Уникальное предложение)</p>
+                            <h2 class="offer__header title js-title" data-class="title--shown">Мы продаем все
+                                объекты<br />
+                                с чистовой отделкой, кухонным гарнитуром, сантехникой<br />
+                                и паркингом</h2>
+                        </div>
+
+                        <div class="offer__button animatedButton buttonWrapper js-open-quiz-modal" data-modal="quiz">
+                            <button class="animatedButton__content button">Получить каталог</button>
+                            <button class="animatedButton__contentHovered button">Получить
+                                каталог</button>
+                        </div>
+                    </div>
+                    <div class="offer__right">
+                        <div class="offer__imgWrapper">
+                            <img alt="Two scyscrapers" src="../img/offer-buildings.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="planet container" id="planet">
+            <div class=" container__row container__row--extraWide">
+                <div class="planet__background">
+                    <div class="container__row container__row--inner">
+                        <div class="planet__inner">
+                            <div class="planet__headerAndCenter">
+                                <h2 class="planet__header title js-title" data-class="title--shown">Где находится
+                                    <br />Дубай и сколько <br />стоит м2?</h2>
+                                <div class="planet__center">
+                                    <div class="planet__item planetItem planetItem--active">
+                                        <div class="planetItem__inner">
+                                            <div class="planetItem__imgWrapper">
+                                                <img class="planetItem__img js-planet-info-img" alt="Planet Item Info"
+                                                    src="../img/planet-item.jpg">
+                                            </div>
+                                            <div class="planetItem__dataWrapper">
+                                                <div class="planetItem__column">
+                                                    <p class="planetItem__subtitle">Город</p>
+                                                    <p class="planetItem__data">Дубай</p>
+                                                </div>
+                                                <div class="planetItem__column">
+                                                    <p class="planetItem__subtitle">Цена за м2</p>
+                                                    <p class="planetItem__data planetItem__data--gold">4500$</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="planet__planetWrapper">
+                                        <p class="planet__number">01</p>
+                                        <div class="planet__planet js-planet-container"></div>
+                                    </div>
+                                    <div class="planet__sliderButtons">
+                                        <button class="planet__sliderButton arrowButton js-globe-prev">
+                                            <svg class="arrowButton__icon arrowButton__icon--back">
+                                                <use href="./spritemap.svg#icon-arrow" />
+                                            </svg>
+                                        </button>
+                                        <button class="planet__sliderButton arrowButton js-globe-next">
+                                            <svg class="arrowButton__icon arrowButton__icon--next">
+                                                <use href="./spritemap.svg#icon-arrow" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="planet__bottom">
+                                <div class="planet__buttonsWrapper">
+                                    <div class="planet__buttonsWrapperLayer">
+                                        <div class="planet__buttons">
+                                            <button class="planet__button planet__button--active">Дубай</button>
+                                            <button class="planet__button">Сингапур</button>
+                                            <button class="planet__button">Москва</button>
+                                            <button class="planet__button">Париж</button>
+                                            <button class="planet__button">Шанхай</button>
+                                            <button class="planet__button">Нью-Йорк</button>
+                                            <button class="planet__button">Лондон</button>
+                                            <button class="planet__button">Токио</button>
+                                            <button class="planet__button">Гонконг</button>
+                                            <button class="planet__button">Монако</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages container js-advantages-slider" id="advantages">
+            <div class="container__row container__row--extraWide">
+                <div class="advantages__background">
+                    <div class="container__row container__row--inner">
+                        <div class="advantages__inner">
+                            <div class="advantages__left">
+                                <div class="advantages__titleAndHeader">
+                                    <p class="advantages__title">(Наши преимущества)</p>
+                                    <h2 class="advantages__header title js-title" data-class="title--shown">Почему
+                                        выбирают
+                                        именно нас?</h2>
+                                </div>
+                                <div class="advantages__space"></div>
+                                <p class="advantages__description js-advantages-slider-description">Опыт работы на рынке
+                                   недвижимости более 10 лет.</p>
+                                <p class="advantages__description js-advantages-slider-description">Помощь в получении ВНЖ</p>
+                            </div>
+                            <!-- <div class="advantages__centerWrapper"> -->
+                                <div class="advantages__center">
+                                    <div class="advantages__circle js-advantages-slider-images">
+                                        <svg class="advantages__progressCircle js-advantages-progress">
+                                            <use href="./spritemap.svg#icon-progress-circle" />
+                                        </svg>
+                                        <!--                                    <div class="advantages__circleBg">-->
+                                        <!--                                        <img class="advantages__circleBgIcon"-->
+                                        <!--                                            src="../img/advantages-slide-1-circle-bg.png" />-->
+                                        <!--                                    </div>-->
+                                        <!--                                    <div class="advantages__imgWrapper"></div>-->
+                                        <img alt="Skyscraper" class="advantages__circleImg" src="../img/advantages-1.jpg" />
+                                        <img alt="Skyscraper" class="advantages__circleImg" src="../img/advantages-2.jpg" />
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                            <div class="advantages__right">
+                                <div class="advantages__counter">
+                                    <div class="advantages__counterCurrent"><span
+                                            class="advantages__counterAllNumber js-advantages-slider-current">01</span>
+                                    </div>
+                                    <div class="advantages__counterAll">/<span
+                                            class="advantages__counterAllNumber js-advantages-slider-total">06</span>
+                                    </div>
+                                </div>
+                                <div class="advantages__sliderButtons">
+                                    <button class="advantages__sliderButton arrowButton js-advantages-slider-prev">
+                                        <svg class="arrowButton__icon arrowButton__icon--back">
+                                            <use href="./spritemap.svg#icon-arrow" />
+                                        </svg>
+                                    </button>
+                                    <button class="advantages__sliderButton arrowButton js-advantages-slider-next">
+                                        <svg class="arrowButton__icon arrowButton__icon--next">
+                                            <use href="./spritemap.svg#icon-arrow" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map container">
+            <!-- <div class="map__marker">
+                <div class="map__circle">
+                    <div class="map__circleImgWrapper">
+                        <img src="./img/map-item.jpg"/>
+                    </div>
+                </div>
+                <span class="map__counter">5</span>
+            </div> -->
+            <div class="container__row container__row--extraWide">
+                <div class="map__background  container__row container__row--inner">
+                    <div class="map__area" id="map"></div>
+
+                    <div class="map__inner">
+                        <h2 class="map__header title js-title" data-class="title--shown">Лучшие районы<br />
+                            Дубая</h2>
+                        <div class="map__item mapItem mapItem--active" id="map-info">
+                            <div class="mapItem__inner">
+                                <div class="mapItem__imgWrapper">
+                                    <img class="mapItem__img js-map-info-img" alt="Map Item Info"
+                                        src="../img/map-item.jpg">
+                                </div>
+                                <div class="mapItem__content">
+                                    <h3 class="mapItem__header js-map-info-title">Damac Hills</h3>
+                                    <div class="mapItem__description">
+                                        <div class="mapItem__column">
+                                            <div class="mapItem__cell">
+                                                <p class="mapItem__subtitle">Начальная цена</p>
+                                                <p class="mapItem__data js-map-info-price">AED 1,874,000</p>
+                                            </div>
+                                            <div class="mapItem__cell">
+                                                <p class="mapItem__subtitle">Застройщик</p>
+                                                <p class="mapItem__data js-map-info-developer">Nakheel</p>
+                                            </div>
+                                        </div>
+                                        <div class="mapItem__column">
+                                            <div class="mapItem__cell">
+                                                <p class="mapItem__subtitle">Площадь</p>
+                                                <p class="mapItem__data js-map-info-area">180 млн. м2</p>
+                                            </div>
+                                            <div class="mapItem__cell">
+                                                <p class="mapItem__subtitle">Типа</p>
+                                                <p class="mapItem__data js-map-info-type">Апартаменты</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map__controls">
+                            <button class="map__controlsZoomIn js-map-zoom-in"></button>
+                            <button class="map__controlsZoomOut js-map-zoom-out"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="news container" id="news">
+            <div class="container__row">
+                <div class="news__inner">
+                    <h2 class="news__header title js-title" data-class="title--shown">Новости</h2>
+                    <div class="news__list js-news-list">
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/1.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/2.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/3.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/4.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/5.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/6.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/7.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+                        <div class="news__item js-open-modal" data-modal="article">
+                            <div class="news__imgWrapper">
+                                <img alt="News" src="../img/news/preview/8.jpg" />
+                            </div>
+                            <time class="news__date" datetime="12.04.2023">12.04.23</time>
+                            <p class="news__title">Билеты в Дубай за счёт застройщика</p>
+                            <p class="news__text">Нашим отечественным застройщикам есть, чему поучиться у дубайских
+                                коллег...</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="news__button animatedButton animatedButton--white buttonWrapper buttonWrapper--border js-show-more">
+                        <button class="animatedButton__content button button--white button--border">Показать
+                            еще</button>
+                        <button class="animatedButton__contentHovered button button--white button--border">Показать
+                            еще</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews container" id="reviews">
+            <div class="reviews__background container__row container__row--extraWide">
+                <div class="reviews__bgWrapper">
+                    <img src="../img/reviews-bg.png">
+                </div>
+                <div class="reviews__row container__row container__row--inner">
+                    <div class="reviews__inner">
+                        <h2 class="reviews__header title js-title" data-class="title--shown">Отзывы<br />
+                            и кейсы клиентов</h2>
+                        <div class="reviews__content">
+                            <img class="reviews__quotesImg" src="../img/reviews-quotes.png">
+                            <div class="reviews__sliderButtons">
+                                <button
+                                    class="reviews__sliderButton arrowButton arrowButton--smallerOnMobile js-reviews-slider-prev">
+                                    <svg class="arrowButton__icon arrowButton__icon--back">
+                                        <use href="./spritemap.svg#icon-arrow" />
+                                    </svg>
+                                </button>
+                                <button
+                                    class="reviews__sliderButton arrowButton arrowButton--smallerOnMobile js-reviews-slider-next">
+                                    <svg class="arrowButton__icon arrowButton__icon--next">
+                                        <use href="./spritemap.svg#icon-arrow" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="reviews__slider js-reviews-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews__top">
+                                            <time class="reviews__date" datetime="12.04.2023">12.04.23</time>
+                                            <p class="reviews__text js-reviews-text">
+                                                Хорошие знакомые посоветовал данных ребят, и не зря. При любой вводной
+                                                помогут: подберут наилучший вариант под Ваши нужды. Всегда на связи, без
+                                                лишней "приставучести", присущей многим...
+                                            </p>
+                                        </div>
+                                        <div class="reviews__bottom">
+                                            <div class="reviews__personData">
+                                                <div class="reviews__imgWrapper">
+                                                    <img class="reviews__img" alt="Климентий Морозов"
+                                                        src="../img/reviews/1.jpg">
+                                                </div>
+                                                <p class="reviews__name">Климентий Морозов</p>
+                                            </div>
+                                            <button class="reviews__moreButton js-open-modal"
+                                                data-modal="review"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews__top">
+                                            <time class="reviews__date" datetime="12.04.2023">12.04.23</time>
+                                            <p class="reviews__text js-reviews-text">
+                                                Читаю отзывы о работе Дмитрия и все-все положительные-приположительные.
+                                                А я хочу написать ВСЮ ПРАВДУ о Дмитрии. Начну с МИНУСОВ-минусов…. А их
+                                                просто нет!!!! Ну а дальше...
+                                            </p>
+                                        </div>
+                                        <div class="reviews__bottom">
+                                            <div class="reviews__personData">
+                                                <div class="reviews__imgWrapper">
+                                                    <img class="reviews__img" alt="Татьяна Абсалямова"
+                                                        src="../img/reviews/2.jpg">
+                                                </div>
+                                                <p class="reviews__name">Татьяна Абсалямова</p>
+                                            </div>
+                                            <button class="reviews__moreButton js-open-modal"
+                                                data-modal="review"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews__top">
+                                            <time class="reviews__date" datetime="12.04.2023">12.04.23</time>
+                                            <p class="reviews__text js-reviews-text">
+                                                Хочу тоже оставить свой отзыв о работе с Дмитрием, очень приятный в
+                                                общении молодой человек, спокойный, рассудительный, дает ценные советы,
+                                                которые не заменят никаких...
+                                            </p>
+                                        </div>
+                                        <div class="reviews__bottom">
+                                            <div class="reviews__personData">
+                                                <div class="reviews__imgWrapper">
+                                                    <img class="reviews__img" alt="Александра Зыкина"
+                                                        src="../img/reviews/3.jpg">
+                                                </div>
+                                                <p class="reviews__name">Александра Зыкина</p>
+                                            </div>
+                                            <button class="reviews__moreButton js-open-modal"
+                                                data-modal="review"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews__top">
+                                            <time class="reviews__date" datetime="12.04.2023">12.04.23</time>
+                                            <p class="reviews__text js-reviews-text">
+                                                Хорошие знакомые посоветовали данных ребят, и не зря. При любой вводной
+                                                помогут: подберут наилучший вариант под Ваши нужды. Всегда на связи, без
+                                                лишней "приставучести", присущей многим...
+                                            </p>
+                                        </div>
+                                        <div class="reviews__bottom">
+                                            <div class="reviews__personData">
+                                                <div class="reviews__imgWrapper">
+                                                    <img class="reviews__img" alt="Климентий Морозов"
+                                                        src="../img/reviews/1.jpg">
+                                                </div>
+                                                <p class="reviews__name">Климентий Морозов</p>
+                                            </div>
+                                            <button class="reviews__moreButton js-open-modal"
+                                                data-modal="review"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews__top">
+                                            <time class="reviews__date" datetime="12.04.2023">12.04.23</time>
+                                            <p class="reviews__text js-reviews-text">
+                                                Читаю отзывы о работе Дмитрия и все-все положительные-приположительные.
+                                                А я хочу написать ВСЮ ПРАВДУ о Дмитрии. Начну с МИНУСОВ-минусов…. А их
+                                                просто нет!!!! Ну а дальше...
+                                            </p>
+                                        </div>
+                                        <div class="reviews__bottom">
+                                            <div class="reviews__personData">
+                                                <div class="reviews__imgWrapper">
+                                                    <img class="reviews__img" alt="Татьяна Абсалямова"
+                                                        src="../img/reviews/2.jpg">
+                                                </div>
+                                                <p class="reviews__name">Татьяна Абсалямова</p>
+                                            </div>
+                                            <button class="reviews__moreButton js-open-modal"
+                                                data-modal="review"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__item swiper-slide">
+                                        <div class="reviews__top">
+                                            <time class="reviews__date" datetime="12.04.2023">12.04.23</time>
+                                            <p class="reviews__text js-reviews-text">
+                                                Хочу тоже оставить свой отзыв о работе с Дмитрием, очень приятный в
+                                                общении молодой человек, спокойный, рассудительный, дает ценные советы,
+                                                которые не заменят никаких...
+                                            </p>
+                                        </div>
+                                        <div class="reviews__bottom">
+                                            <div class="reviews__personData">
+                                                <div class="reviews__imgWrapper">
+                                                    <img class="reviews__img" alt="Александра Зыкина"
+                                                        src="../img/reviews/3.jpg">
+                                                </div>
+                                                <p class="reviews__name">Александра Зыкина</p>
+                                            </div>
+                                            <button class="reviews__moreButton js-open-modal"
+                                                data-modal="review"></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="reviews__progress">
+                                <div class="reviews__progressBar js-reviews-slider-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq container" id="faq">
+            <div class="faq__row container__row">
+                <div class="faq__inner">
+                    <h2 class="faq__header title js-title" data-class="title--shown">Вопрос-ответ</h2>
+                    <div class="faq__list js-faq-wrapper">
+                        <div class="faq__item">
+                            <div class="faq__itemHeader" data-container="answer-1">
+                                <h3 class="faq__itemTitle">Какие документы мне нужны, чтобы купить недвижимость в Дубае?
+                                </h3>
+                                <div class="faq__openButton">
+                                    <svg class="faq__openButtonIcon">
+                                        <use href="./spritemap.svg#icon-arrow-faq" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq__itemContent" id="answer-1">
+                                <div class="faq__itemAnswer">
+                                    <p>Для покупки недвижимости в Дубае вы должны предоставить следующие документы:
+                                        паспорт, визу (если вы не гражданин ОАЭ), подтверждение доходов, банковскую
+                                        выписку и заявление о покупке недвижимости.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__itemHeader" data-container="answer-2">
+                                <h3 class="faq__itemTitle">Какой процесс покупки недвижимости в Дубае?</h3>
+                                <div class="faq__openButton">
+                                    <svg class="faq__openButtonIcon">
+                                        <use href="./spritemap.svg#icon-arrow-faq" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq__itemContent" id="answer-2">
+                                <div class="faq__itemAnswer">
+                                    <p>Для покупки недвижимости в Дубае вы должны предоставить следующие документы:
+                                        паспорт, визу (если вы не гражданин ОАЭ), подтверждение доходов, банковскую
+                                        выписку и заявление о покупке недвижимости.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__itemHeader" data-container="answer-3">
+                                <h3 class="faq__itemTitle">Что такое задаток и как он работает при покупке недвижимости
+                                    в Дубае?</h3>
+                                <div class="faq__openButton">
+                                    <svg class="faq__openButtonIcon">
+                                        <use href="./spritemap.svg#icon-arrow-faq" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq__itemContent" id="answer-3">
+                                <div class="faq__itemAnswer">
+                                    <p>Для покупки недвижимости в Дубае вы должны предоставить следующие документы:
+                                        паспорт, визу (если вы не гражданин ОАЭ), подтверждение доходов, банковскую
+                                        выписку и заявление о покупке недвижимости.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__itemHeader" data-container="answer-4">
+                                <h3 class="faq__itemTitle">Какие налоги я должен заплатить при покупке недвижимости в
+                                    Дубае?</h3>
+                                <div class="faq__openButton">
+                                    <svg class="faq__openButtonIcon">
+                                        <use href="./spritemap.svg#icon-arrow-faq" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq__itemContent" id="answer-4">
+                                <div class="faq__itemAnswer">
+                                    <p>Для покупки недвижимости в Дубае вы должны предоставить следующие документы:
+                                        паспорт, визу (если вы не гражданин ОАЭ), подтверждение доходов, банковскую
+                                        выписку и заявление о покупке недвижимости.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__itemHeader" data-container="answer-5">
+                                <h3 class="faq__itemTitle">Каковы преимущества покупки недвижимости в Дубае?</h3>
+                                <div class="faq__openButton">
+                                    <svg class="faq__openButtonIcon">
+                                        <use href="./spritemap.svg#icon-arrow-faq" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq__itemContent" id="answer-5">
+                                <div class="faq__itemAnswer">
+                                    <p>Для покупки недвижимости в Дубае вы должны предоставить следующие документы:
+                                        паспорт, визу (если вы не гражданин ОАЭ), подтверждение доходов, банковскую
+                                        выписку и заявление о покупке недвижимости.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts container" id="contacts">
+            <div class="container__row">
+                <div class="contacts__inner">
+                    <div class="contacts__left">
+                        <h2 class="contacts__header title js-title" data-class="title--shown">Контакты</h2>
+                        <div class="contacts__buttonsWrapper">
+                            <div class="contacts__buttonsWrapperLayer">
+                                <div class="contacts__buttons js-contacts-buttons">
+                                    <button class="contacts__button contacts__button--active js-contacts-button"
+                                        data-type="dubai">Дубай</button>
+                                    <button class="contacts__button js-contacts-button"
+                                        data-type="spb">Санкт-Петербург</button>
+                                    <button class="contacts__button js-contacts-button"
+                                        data-type="moscow">Москва</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__data js-contacts-data">
+                            <div class="contacts__dataCity contacts__dataCity--active" data-type="dubai">
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-geo" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Адрес</p>
+                                        </div>
+                                        <a class="contacts__dataItemText" href="https://goo.gl/maps/mKaYn56jjrmg7A2p8" target="_blank">Arenco Tower, 990 Sheikh Zayed Road, 304
+                                            office</a>
+                                    </div>
+                                </div>
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-tel" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Телефон</p>
+                                        </div>
+                                        <div class="contacts__linkWrapper"><a
+                                                class="contacts__dataItemText contacts__dataItemLink"
+                                                href="tel:+971564099445">+971 56 409 9445</a></div>
+                                    </div>
+                                </div>
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-mail" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Почта</p>
+                                        </div>
+                                        <div class="contacts__linkWrapper"><a
+                                                class="contacts__dataItemText contacts__dataItemLink"
+                                                href="mailto: example@gmail.com">example@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contacts__dataCity" data-type="spb">
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-geo" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Адрес</p>
+                                        </div>
+                                        <a class="contacts__dataItemText" href="https://goo.gl/maps/vQNCxMnQVjqfohS88" target="_blank">3-я линия В.О., дом 62А, помещение 3, офис 21
+                                        </a>
+                                    </div>
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-geo" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Адрес</p>
+                                        </div>
+                                        <a class="contacts__dataItemText" href="https://goo.gl/maps/xfHymwKxJU9K7hVp9" target="_blank">Проспект Королева, <br />дом 7, офис 119</a>
+                                    </div>
+                                </div>
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-tel" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Телефон</p>
+                                        </div>
+                                        <div class="contacts__linkWrapper"><a
+                                                class="contacts__dataItemText contacts__dataItemLink"
+                                                href="tel:+971564099445">+971 56 409 9445</a></div>
+                                    </div>
+                                </div>
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-mail" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Почта</p>
+                                        </div>
+                                        <div class="contacts__linkWrapper"><a
+                                                class="contacts__dataItemText contacts__dataItemLink"
+                                                href="mailto: example@gmail.com">example@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__dataCity" data-type="moscow">
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-geo" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Адрес</p>
+                                        </div>
+                                        <p class="contacts__dataItemText">Скоро открытие</p>
+                                    </div>
+                                </div>
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-tel" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Телефон</p>
+                                        </div>
+                                        <div class="contacts__linkWrapper"><a
+                                                class="contacts__dataItemText contacts__dataItemLink"
+                                                href="tel:+971564099445">+971 56 409 9445</a></div>
+                                    </div>
+                                </div>
+                                <div class="contacts__dataItem">
+                                    <div class="contacts__dataCell">
+                                        <div class="contacts__dataItemTitle">
+                                            <svg class="contacts__dataItemTitleIcon">
+                                                <use href="./spritemap.svg#icon-contacts-mail" />
+                                            </svg>
+                                            <p class="contacts__dataItemTitleText">Почта</p>
+                                        </div>
+                                        <div class="contacts__linkWrapper"><a
+                                                class="contacts__dataItemText contacts__dataItemLink"
+                                                href="mailto: example@gmail.com">example@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__right">
+                        <div class="contacts__form form">
+                            <div class="form__inner">
+                                <h2 class="form__header title js-title" data-class="title--shown">Заказать звонок</h2>
+                                <form action="#" class="form__form">
+                                    <div class="form__main">
+                                        <input class="form__input" data-validation="required" type="text" name="name"
+                                            placeholder="Имя">
+                                        <input class="form__input" data-validation="phone" type="text" name="tel"
+                                            placeholder="Телефон">
+                                        <div class="form__bottomInputsWrapper">
+                                            <textarea class="form__input form__textarea" type="text" name="message"
+                                                placeholder="Сообщение (не обязательно)"></textarea>
+                                            <!-- <div class="form__radioContainer">
+                                                <div class="form__radioButtonWrapper">
+                                                    <input class="form__radioButton" type="radio" name="contact"
+                                                        id="radioTgHome" value="Telegram" />
+                                                    <label class="form__radioLabel" for="radioTgHome">
+                                                        <svg class="form__radioIcon">
+                                                            <use href="./spritemap.svg#icon-tg-icon" />
+                                                        </svg>
+                                                        <p class="form__radioText">Telegram</p>
+                                                    </label>
+                                                </div>
+                                                <div class="form__radioButtonWrapper">
+                                                    <input class="form__radioButton" type="radio" name="contact"
+                                                        id="radioWaHome" value="Telegram">
+                                                    <label class="form__radioLabel" for="radioWaHome">
+                                                        <svg class="form__radioIcon">
+                                                            <use href="./spritemap.svg#icon-wa-icon" />
+                                                        </svg>
+                                                        <p class="form__radioText">Whatsapp</p>
+                                                    </label>
+                                                </div>
+                                                <div class="form__radioButtonWrapper">
+                                                    <input class="form__radioButton" type="radio" name="contact"
+                                                        id="radioVkHome" value="Telegram">
+                                                    <label class="form__radioLabel" for="radioVkHome">
+                                                        <svg class="form__radioIcon">
+                                                            <use href="./spritemap.svg#icon-vk-icon" />
+                                                        </svg>
+                                                        <p class="form__radioText">Vk</p>
+                                                    </label>
+                                                </div>
+                                                <div class="form__radioButtonWrapper">
+                                                    <input class="form__radioButton" type="radio" name="contact"
+                                                        id="radioDzenHome" value="Telegram">
+                                                    <label class="form__radioLabel" for="radioDzenHome">
+                                                        <svg class="form__radioIcon">
+                                                            <use href="./spritemap.svg#icon-dzen-icon" />
+                                                        </svg>
+                                                        <p class="form__radioText">Яндекс.Дзен</p>
+                                                    </label>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="form__bottom">
+                                        <div class="form__button animatedButton animatedButton--black buttonWrapper">
+                                            <input type="submit" data-success="Sent"
+                                                class="animatedButton__content button button--black"
+                                                value="Отправить заявку" />
+                                            <input type="submit" data-success="Sent"
+                                                class="animatedButton__contentHovered button button--black"
+                                                value="Отправить заявку" />
+                                        </div>
+
+                                        <p class="form__terms">Нажимая кнопку «Отправить заявку», вы принимаете<br />
+                                            <a href="#" class="form__termsLink js-open-modal" data-modal="terms">условия обработки пользовательских
+                                                данных</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="container__row">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <p class="footer__name">© <span>2021-2023 </span>ONEPLACE</p>
+                    <a class="footer__policy js-open-modal" data-modal="policy" href="#" >Политика конфиденциальности</a>
+                </div>
+                <!-- <a class="footer__made" href="https://finik.ae/" target="_blank">Сайт создан в
+                    &nbsp;<span>FINIK</span></a> -->
+                <!-- <p class="footer__years">2013-2023</p> -->
+            </div>
+        </div>
+    </footer>
+
+    <section class="modals js-modals">
+        <div class="modals__item modals__item--center modals__item--startOnMobile" id="quiz">
+        </div>
+
+        <div class="modals__item modals__item--center" id="thanks">
+            <div class="thanks">
+                <button class="thanks__closeButton js-close-modals closeButton"></button>
+                <div class="thanks__inner">
+                    <h2 class="thanks__header">Спасибо!</h2>
+                    <p class="thanks__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <div class="thanks__button animatedButton animatedButton--black buttonWrapper js-close-modals">
+                        <button class="animatedButton__content button button--black">
+                            Закрыть
+                        </button>
+                        <button class="animatedButton__contentHovered button button--black">
+                            Закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+
+        <div class="modals__item" id="apartmentData">
+            <div class="apartmentData">
+                <div class="apartmentData__inner">
+                    <div class="apartmentData__left">
+                        <div class="apartmentData__photo js-apartment-data-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                                <div class="swiper-slide apartmentData__photoItem">
+                                    <img alt="Apartaments" src="../img/apartment-data.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apartmentData__slider">
+                            <button
+                                class="apartmentData__sliderButton apartmentData__sliderButton--back arrowButton js-apartment-prev">
+                                <svg class="arrowButton__icon arrowButton__icon--back">
+                                    <use href="./spritemap.svg#icon-arrow" />
+                                </svg>
+                            </button>
+                            <div class="apartmentData__sliderContainer js-apartment-data-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                    <div class="apartmentData__sliderPhoto swiper-slide">
+                                        <img alt="Apartaments" src="../img/apartment-data.jpg"></div>
+                                </div>
+                            </div>
+
+                            <button class="apartmentData__sliderButton apartmentData__sliderButton--next arrowButton js-apartment-next">
+                                <svg class="arrowButton__icon">
+                                    <use href="./spritemap.svg#icon-arrow" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="apartmentData__right">
+                        <button
+                            class="apartmentData__closeButton js-close-apartment-modal closeButton closeButton--shadow closeButton--smaller closeButton--border"></button>
+
+                        <div class="apartmentData__rightTop">
+                            <p class="apartmentData__id">ID: <span class="js-apartment-data-id">1253353</span></p>
+                            <h3 class="apartmentData__header js-apartment-data-title">2-спальные апартаменты</h3>
+                            <p class="apartmentData__address js-apartment-data-address">Golf Views, Dubai, Cluster Z,
+                                Jumeirah Lakes
+                                Apartments Z3 </p>
+                            <div class="apartmentData__options">
+                                <div class="apartmentData__option">
+                                    <p>Тип недвижимости</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">Апартаменты</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Площадь</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">120 м2</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Цена за м2</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">6 619 USD</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Количество этажей</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">26</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Количество спален</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">2</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Количество ванных </p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">2</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Отделка</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">Да</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Корпусная мебель</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">Да</p>
+                                </div>
+                                <div class="apartmentData__option">
+                                    <p>Отделка</p>
+                                    <div class="apartmentData__border"></div>
+                                    <p class="apartmentData__optionData">Паркинг</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apartmentData__rightBottom">
+                            <div class="apartmentData__price">
+                                <p class="apartmentData__priceNumber js-apartment-data-price">284,000</p>
+                                <div class="apartmentData__priceSelect">
+                                    <select name="currency" class="js-currency-select">
+                                        <option value="dollar" data-price="284,000">$</option>
+                                        <option value="euro" data-price="264,000">€</option>
+                                        <option value="dirham" data-price="1,064,000">AED</option>
+                                    </select>
+
+                                    <!-- <div class="currencySelect">
+                                        <div class="currencySelect__inner js-currency-select-wrapper">
+                                            <div class="currencySelect__head">
+                                                <div class="currencySelect__currentValue js-currency-select-current">$</div>
+                                                <div class="currencySelect__button">
+                                                    <svg class="currencySelect__icon">
+                                                        <use href="./spritemap.svg#icon-arrow" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="currencySelect__options">
+                                                <div
+                                                    class="currencySelect__option currencySelect__option--active js-currency-select-option">
+                                                    $</div>
+                                                <div class="currencySelect__option js-currency-select-option">€</div>
+                                                <div class="currencySelect__option js-currency-select-option">AED</div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="apartmentData__buttons">
+                            <div class="animatedButton animatedButton--white buttonWrapper buttonWrapper--border js-open-modal"
+                                data-modal="getBrochure">
+                                <button class="animatedButton__content button button--white">Cкачать презентацию,
+                                    <span>199KB</span>
+                                    <svg class="button__icon">
+                                        <use href="./spritemap.svg#icon-download" />
+                                    </svg>
+                                </button>
+                                <button class="animatedButton__contentHovered button button--white">Cкачать
+                                    презентацию,<span>199KB</span>
+                                    <svg class="button__icon">
+                                        <use href="./spritemap.svg#icon-download" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="animatedButton buttonWrapper js-open-modal" data-modal="getConsultation">
+                                <button class="animatedButton__content button">Получить консультацию</button>
+                                <button class="animatedButton__contentHovered button">Получить
+                                    консультацию</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modals__item modals__item--center" id="getBrochure">
+            <div class="getForm">
+                <button class="getForm__closeButton js-close-modals closeButton"></button>
+                <div class="getForm__inner form">
+                    <div class="form__inner">
+                        <div class="form__headerAndDescription">
+                            <h2 class="form__header">Получить презентацию</h2>
+                            <div class="form__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                        </div>
+                        <form action="#" class="form__form">
+                            <div class="form__main form__main--lessMargin">
+                                <input class="form__input" data-validation="required" type="text" name="name"
+                                    placeholder="Имя">
+                                <input class="form__input" data-validation="phone" type="text" name="tel"
+                                    placeholder="Телефон">
+                                <div class="form__bottomInputsWrapper form__bottomInputsWrapper--oneColumn">
+                                    <input class="form__input" data-validation="email" type="email" name="email"
+                                        placeholder="Электронная почта">
+                                </div>
+                            </div>
+                            <div class="form__bottom">
+                                <div class="form__button animatedButton animatedButton--black buttonWrapper">
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__content button button--black" value="Скачать презентацию" />
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__contentHovered button button--black"
+                                        value="Скачать презентацию" />
+                                </div>
+                                <p class="form__terms">Нажимая кнопку «Скачать презентацию», вы принимаете<br />
+                                    <a href="#" class="form__termsLink js-open-modal" data-modal="terms">условия обработки пользовательских
+                                        данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item modals__item--center modals__item--startOnMobile" id="getConsultation">
+            <div class="getForm">
+                <button class="getForm__closeButton js-close-modals closeButton"></button>
+                <div class="getForm__inner form">
+                    <div class="form__inner">
+                        <div class="form__headerAndDescription">
+                            <h2 class="form__header">Укажите контактные данные</h2>
+                            <div class="form__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </div>
+                        </div>
+                        <form action="#" class="form__form">
+                            <div class="form__main form__main--lessMargin">
+                                <input class="form__input" data-validation="required" type="text" name="name"
+                                    placeholder="Имя">
+                                <input class="form__input" data-validation="phone" type="text" name="tel"
+                                    placeholder="Телефон">
+                                <div class="form__bottomInputsWrapper form__bottomInputsWrapper--oneColumn">
+                                    <textarea class="form__input form__textarea" type="text" name="message"
+                                        placeholder="Сообщение (не обязательно)"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__bottom">
+                                <div class="form__button animatedButton animatedButton--black buttonWrapper">
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__content button button--black" value="Отправить заявку" />
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__contentHovered button button--black"
+                                        value="Отправить заявку" />
+                                </div>
+                                <p class="form__terms">Нажимая кнопку «Отправить заявку», вы принимаете<br />
+                                    <a href="#" class="form__termsLink js-open-modal" data-modal="terms">условия обработки пользовательских
+                                        данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item" id="article">
+            <div class="article">
+                <button class="article__closeButton closeButton closeButton--shadow js-close-modals"></button>
+                <div class="article__inner js-news-modal-inner">
+                    <h2 class="article__header">Билеты в Дубай <br />за счёт застройщика</h2>
+                    <div class="article__imgWrapper">
+                        <img class="article__img" alt="Dubai" src="../img/single-news.jpg">
+                    </div>
+                    <div class="article__contentWrapper">
+                        <div class="article__content">
+                            <div class="article__left">
+                                <div class="article__date">
+                                    <time datetime="11.03.2022">11.03.2022</time>
+                                </div>
+                                <div class="article__shares">
+                                    <!-- href="https://t.me/share/url?url=http://maghreb.zoupe.ru/news/testovaya-novost-7/&text=Lorem ipsum dolor" -->
+                                    <a href="#" target="_blank" class="article__shareLink">
+                                        <svg class="article__shareIcon">
+                                            <use href="./spritemap.svg#icon-tg-icon" />
+                                        </svg>
+                                    </a>
+                                    <!-- href="https://www.facebook.com/sharer/sharer.php?u=http://maghreb.zoupe.ru/news/testovaya-novost-7/"  -->
+                                    <a href="#" target="_blank" class="article__shareLink">
+                                        <svg class="article__shareIcon">
+                                            <use href="./spritemap.svg#icon-vk-icon" />
+                                        </svg>
+                                    </a>
+                                    <!-- href="https://vk.com/share.php?url=http://maghreb.zoupe.ru/news/testovaya-novost-7/"  -->
+                                    <a href="#" target="_blank" class="article__shareLink">
+                                        <svg class="article__shareIcon">
+                                            <use href="./spritemap.svg#icon-wa-icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article__right">
+                                <div class="article__text">
+                                    <p class="article__paragraph article__paragraph--bigger">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris</p>
+                                    <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                    <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                    <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                    <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item" id="policy">
+            <div class="article article--smallerWidth">
+                <button class="article__closeButton closeButton closeButton--shadow js-close-modals"></button>
+                <div class="article__inner article__inner--smallerBottomPadding js-news-modal-inner">
+                    <h2 class="article__header">Политика в отношении обработки персональных данных</h2>
+                    <div class="article__contentWrapper">
+                        <div class="article__content article__content--fullWidth">
+                            <div class="article__columnWrapper js-policy-scroll">
+                                <div class="article__column">
+                                    <div class="article__columnRow">
+                                        <p>1. Общие положения</p>
+                                        <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных данных» (далее — Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ONEPLACE (далее — Оператор).</p>
+                                        <p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+                                        <p>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее — Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://oneplacedubai.ru .</p>
+                                    </div>
+                                    <div class="article__columnRow">
+                                        <p>2. Основные понятия, используемые в Политике</p>
+                                        <p>2.1. Автоматизированная обработка персональных данных — обработка персональных данных с помощью средств вычислительной техники.</p>
+                                        <p>2.2. Блокирование персональных данных — временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</p>
+                                        <p>2.3. Веб-сайт — совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://oneplacedubai.ru .</p>
+                                   <p>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств.</p>
+                                    <p>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных.</p>
+                                    <p>2.6. Обработка персональных данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+                                    <p>2.7. Оператор — государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и/или осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+                                     <p>2.8. Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта https://oneplacedubai.ru .</p>
+                                      <p>2.9. Персональные данные, разрешенные субъектом персональных данных для распространения, — персональные данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных путем дачи согласия на обработку персональных данных, разрешенных субъектом персональных данных для распространения в порядке, предусмотренном Законом о персональных данных (далее — персональные данные, разрешенные для распространения).</p>
+                                       <p>2.10. Пользователь — любой посетитель веб-сайта https://oneplacedubai.ru .</p>
+                                        <p>2.11. Предоставление персональных данных — действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц.</p>
+                                        <p>2.12. Распространение персональных данных — любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом.</p>
+                                         <p>2.13. Трансграничная передача персональных данных — передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу.</p>
+                                          <p>2.14. Уничтожение персональных данных — любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и/или уничтожаются материальные носители персональных данных.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item modals__item--center modals__item--startOnMobile" id="terms">
+            <div class="article article--smallerWidth">
+                <button class="article__closeButton closeButton closeButton--shadow js-close-modals"></button>
+                <div class="article__inner article__inner--smallerBottomPadding js-news-modal-inner">
+                    <h2 class="article__header">Обработка персональных данных</h2>
+                    <div class="article__contentWrapper">
+                        <div class="article__content article__content--fullWidth">
+                            <div class="article__columnWrapper">
+                                <div class="article__column">
+                                    <div class="article__columnRow">
+                                        <p>1. В соответствии с требованиями Федерального закона от 27.07.2006 г. № 152-ФЗ «О персональных данных», ONEPLACE REAL ESTATE L.L.C собирает и обрабатывает персональные данные посетителей сайта oneplacedubai.ru, а именно: фамилия, имя, отчество; контактный телефон, адрес электронной почты, в целях информирования о новостях, товарах и услугах, условиях оплаты и работы.</p>
+                                    <p>2. Заказывая обратный звонок через форму обратной связи на сайте oneplacedubai.ru, Посетитель дает свое согласие на сбор и обработку персональных данных о себе.</p>
+                                    <p>3. При сборе и обработке персональных данных ONEPLACE REAL ESTATE L.L.C не преследует иных целей, кроме установленных в п.1 настоящего Согласия на обработку персональных данных. 4. Доступ к персональным данным посетителей имеют только лица, имеющие непосредственное отношение к информированию посетителей.</p>
+                                    <p>5. Посетитель сайта oneplacedubai.ru дает свое согласие на полную или частичную запись телефонных переговоров в целях повышения качества обслуживания.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item" id="review">
+            <div class="review">
+                <div class="review__inner">
+                    <div class="review__top">
+                        <div class="review__personData">
+                            <div class="review__imgWrapper">
+                                <img class="review__img" alt="Климентий Морозов" src="../img/reviews/1.jpg">
+                            </div>
+                            <div class="review__dateAndName">
+                                <time class="review__date" datetime="12.04.2023">12.04.2023</time>
+                                <p class="review__name">Климентий Морозов</p>
+                            </div>
+                        </div>
+                        <button class="review__closeButton closeButton--shadow closeButton js-close-modals"></button>
+                    </div>
+                    <div class="review__text js-review-scroll">
+                        <p>Всем привет! Имея за спиной очень печальный опыт приобретения квартиры у другого застройщика,
+                            для нового приобретения пришлось буквально рыть Интернет в поисках отзывов. Когда нашла эту
+                            группу очень много сомнений отпало, а те, которые остались выместила путем обращения в личку
+                            к тем, кто благодаря Дмитрию уже купил квартиру. Надеюсь и мой отзыв поможет кому-то
+                            решиться и сделать правильный выбор!</p>
+                        <p>История моего приобретения длилась очень-очень долго. Как уже озвучила, однажды меня уже
+                            обманули при покупке первичного жилья (кому интересно – отвечу
+                            в личку), поэтому порыдав несколько лет и поняв что деваться некуда и жилищный вопрос все
+                            равно нужно решать, полтора года назад приступила к заочному поиску квартиры на просторах
+                            Интернет. Проживаю от Санкт-Петербурга очень далеко – Район Крайнего Севера. Возможности
+                            приехать в город и выбрать не было из-за «интересного положения». Сайты застройщиков, форумы
+                            дольщиков, переговоры с агентами недвижимости – все это занимало ужасно много времени,
+                            вызывало много эмоций, решение принять не могла никак, опускались руки… </p>
+                        <p>ЖК «Северная Долина» заинтересовала меня тем, что строительство продвигается быстро и сдача
+                            очередей комплекса происходит преимущественно раньше срока.
+                            Но дозвониться в Отдел продаж невозможно, застройщик сложный, агентства недвижимости сразу
+                            озвучивают,
+                            что для иногородних требования настолько завышены,
+                            что не захочешь нести свои кровные туда, где еще и нервы портят… В марте этого года я
+                            наткнулась Вконтакте на эту группу и написала Дмитрию о намерении приобрести студию. В
+                            переписке он четко и конкретно отвечал на все мои вопросы. Восемь долгих месяцев (!!!) я
+                            мучила его расспросами, делилась опасениями, просила совета, заставляла то одно, то другое
+                            уточнять у застройщика и в банках… Имея очень сложный характер, я до сих пор поражаюсь – как
+                            у этого молодого человека хватило терпения, самообладания, и достоинства, чтобы вытерпеть
+                            меня и подвести к решению о сделке. И это было не самое страшное. Когда мы определились, что
+                            все же покупаем квартиру именно в ЖК «СД» встал вопрос о выборе очереди и планировки. Очень
+                            корректно, со знанием дела, Дмитрий описывал мне чуть ли не все </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="container preloader js-preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">
+                <svg class="preloader__logoIcon">
+                    <use href="./spritemap.svg#icon-logo" />
+                </svg>
+                <svg class="preloader__logoIcon preloader__logoIcon--column">
+                    <use href="./spritemap.svg#icon-logo-column" />
+                </svg>
+            </div>
+        </div>
+    </section> -->
+    <div class="overlay js-overlay"></div>
+</body>
+
+</html>

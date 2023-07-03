@@ -1,0 +1,145 @@
+.Step {
+    padding: 40px 40px 40px 100px;
+    width: 100%;
+    display: flex;
+}
+
+.Step__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 64%;
+    margin-right: 40px;
+}
+
+.Step__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Step__leftTop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+.Step__title {
+    text-align: center;
+    margin: 0;
+    margin: 0 0 16px 0;
+}
+
+.Step__caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--grey);
+}
+
+.Step__options {
+    display: flex;
+        align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.Step__options--row {
+    flex-direction: row;
+}
+
+.Step__navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Step__imgWrapper {
+    vertical-align: top;
+    width: 36%;
+    height: 660px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.Step__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+
+}
+
+@media screen and (max-width: 1050px) {
+    .Step {
+        padding: 56px 20px 30px 20px;
+    }
+
+    .Step__left {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .Step__leftTop {
+        margin-bottom: 40px;
+    }
+
+    .Step__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .Step__caption {
+        font-size: 14px;
+        /* height: 15px; */
+    }
+
+    .Step__options {
+        align-items: flex-start;
+        flex-direction:row;
+        width: 98%;
+        min-height: 115px;
+    }
+
+    .Step__imgWrapper {
+        display: none;
+    }
+    .Step__navigation {
+        display: flex;
+        justify-content: center;
+        width: 98%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .Step {
+        padding-bottom: 20px;
+    }
+    .Step__title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .Step__leftTop {
+        margin-bottom: 30px;
+    }
+
+    .Step__options--row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

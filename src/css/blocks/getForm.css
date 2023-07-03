@@ -1,0 +1,41 @@
+.getForm {
+    position: relative;
+    max-width: 840px;
+    width: 100%;
+}
+
+.getForm__closeButton {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .getForm {
+        max-width: 648px;
+    }
+    .getForm__inner {
+        padding: 70px 20px 40px 20px;
+    }
+
+    .getForm__closeButton {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .getForm {
+        max-width: 90%;
+    }
+    .getForm__inner {
+        padding-top: 56px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .getForm {
+        max-width: 315px;
+    }
+}

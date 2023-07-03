@@ -1,0 +1,148 @@
+.thanks {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    min-height: 700px;
+    width: 100%;
+    background-color: var(--cream-white);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.thanks::after {
+    position: absolute;
+    pointer-events: none;
+    display: block;
+    content: '';
+
+    bottom: -39%;
+    left: -15%;
+
+    width: 876px;
+    height: 876px;
+
+    background-image: url("./img/bg-pattern-gold.png");
+    background-repeat: no-repeat;
+    background-size: 876px;
+    z-index: 1;
+}
+
+
+.thanks__closeButton {
+    position: absolute;
+    top: 51px;
+    left: 40px;
+    z-index: 3;
+}
+
+.thanks__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    width: 100%;
+    padding: 260px 40px 110px 40px;
+    z-index: 2;
+}
+
+.thanks__header {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.thanks__description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--grey);
+    margin-top: 0;
+    margin-bottom: 120px;
+    max-width: 455px;
+}
+
+.thanks__button {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+    .thanks {
+        border-radius: 16px;
+        max-width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .thanks {
+        max-width: 648px;
+        min-height: unset;
+        border-radius: 8px;
+    }
+
+    .thanks::after {
+        bottom: -36%;
+        left: -23%;
+
+        width: 523px;
+        height: 523px;
+
+        background-size: 523px;
+    }
+
+    .thanks__inner {
+        padding: 106px 20px 30px 20px;
+    }
+
+    .thanks__description {
+        margin-bottom: 100px;
+    }
+
+
+    .thanks__header {
+        margin-bottom: 10px;
+    }
+
+    .thanks__closeButton {
+        top: 20px;
+        right: 20px;
+        left: unset;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .thanks__description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .thanks {
+        max-width: 90%;
+    }
+
+    .thanks__inner {
+        padding-top: 156px;
+    }
+
+    .thanks__description {
+        max-width: 90%;
+        margin-bottom: 150px;
+    }
+
+    .thanks::after {
+        bottom: -25%;
+        left: -67%;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .thanks {
+        max-width: 315px;
+    }
+}

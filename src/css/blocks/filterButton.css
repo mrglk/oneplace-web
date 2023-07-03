@@ -1,0 +1,62 @@
+.filterButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid rgba(154, 154, 154, 0.25);
+    border-radius: 50px;
+    padding: 17px 32px;
+    color: var(--black);
+
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+.filterButton__icon {
+    width: 15px;
+    height: 15px;
+    fill: var(--black);
+    /*stroke: var(--black);*/
+    margin-right: 12px;
+}
+
+.filterButton__icon--bigger {
+    width: 18px;
+    height: 18px;
+}
+
+.filterButton__text {
+    font-size: 18px;
+}
+
+.filterButton:hover, .filterButton--active {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+}
+
+.filterButton:hover .filterButton__icon,
+.filterButton--active .filterButton__icon {
+    fill: var(--white);
+    /*stroke: var(--white);*/
+}
+
+@media screen and (max-width: 950px) {
+    .filterButton {
+        padding: 14px 26px;
+    }
+
+    .filterButton__text {
+        font-size: 14px;
+    }
+
+    .filterButton__icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    .filterButton__icon--bigger {
+        width: 15px;
+        height: 15px;
+    }
+    
+}

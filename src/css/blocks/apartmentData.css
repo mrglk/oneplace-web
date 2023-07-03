@@ -1,0 +1,428 @@
+.apartmentData {
+    position: relative;
+    width: 100vw;
+    min-height: var(--vh);
+    background-color: var(--cream-white);
+}
+
+.apartmentData__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 50px 40px;
+}
+
+.apartmentData__left {
+    width: 73%;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.apartmentData__photo {
+    width: 100%;
+    margin-bottom: 27px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.apartmentData__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apartmentData__photoItem {
+    height: 0;
+    padding-bottom: 55%;
+    max-width: 100%;
+
+    position: relative;
+}
+
+.apartmentData__photoItem img {
+    position: absolute;
+}
+
+.apartmentData__slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.apartmentData__sliderContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    margin: 0 5px;
+    overflow: hidden;
+}
+
+.apartmentData__sliderButton {
+    position: absolute;
+    top: calc(50% - 27px);
+    z-index: 2;
+}
+
+.apartmentData__sliderButton--back {
+    left: -23px;
+}
+
+.apartmentData__sliderButton--next {
+    right: -23px;
+}
+
+.apartmentData__sliderPhoto {
+    display: flex;
+    object-fit: cover;
+    max-width: 185px;
+    max-height: 155px;
+    width: 185px;
+    height: 155px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.apartmentData__sliderPhoto:not(:last-child) {
+    margin-right: 19px;
+}
+
+.apartmentData__sliderPhoto img {
+    max-width: 185px;
+    max-height: 155px;
+    width: 185px;
+    height: 155px;
+    object-fit: cover;
+}
+
+.apartmentData__right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 40px 25px 25px 30px;
+    width: 27%;
+}
+
+.apartmentData__closeButton {
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    z-index: 1;
+}
+
+.apartmentData__id {
+    font-size: 16px;
+    color: var(--black);
+    margin: 0 0 20px 0;
+}
+
+.apartmentData__header {
+    max-width: 90%;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0 0 20px 0;
+}
+
+.apartmentData__address {
+    max-width: 60%;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--grey);
+    margin: 0 0 30px 0;
+}
+
+.apartmentData__options {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.apartmentData__option {
+    display: flex;
+}
+
+.apartmentData__option p {
+    margin: 0;
+}
+
+.apartmentData__optionData {
+    font-weight: 500;
+}
+
+.apartmentData__option:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.apartmentData__border {
+    background-image: url("./img/border-dashed.png");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    margin: 0 6px;
+    background-size: 15px;
+}
+
+.apartmentData__border {
+    flex: 1;
+}
+
+.apartmentData__rightBottom {
+    margin-top: 50px;
+}
+
+.apartmentData__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.apartmentData__priceNumber {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+}
+
+.apartmentData__buttons {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+.apartmentData__buttons .animatedButton {
+    max-width: 100%;
+    border-radius: 50px;
+    border-color: #292F3B40;
+}
+
+.apartmentData__buttons button {
+    font-size: 18px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+@media screen and (max-width: 1700px) {
+    .apartmentData__inner {
+        padding: 25px 30px 40px 25px;
+    }
+
+    .apartmentData__left {
+        width: 65%;
+    }
+
+    .apartmentData__right {
+        width: 35%;
+        padding-top: 30px;
+    }
+
+    .apartmentData__header {
+        margin-bottom: 15px;
+    }
+
+    .apartmentData__id {
+        margin-bottom: 15px;
+    }
+
+    .apartmentData__closeButton {
+        top: 30px;
+        right: 15px;
+    }
+
+    .apartmentData__option:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .apartmentData__sliderPhoto,
+    .apartmentData__sliderPhoto img {
+        max-width: 165px;
+        max-height: 135px;
+        width: 165px;
+        height: 135px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .apartmentData__inner {
+        flex-direction: column;
+        padding: 70px 20px 24px 20px;
+    }
+
+    .apartmentData__left {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .apartmentData__right {
+        position: static;
+        width: 100%;
+        padding-top: 30px 20px 20px 20px;
+    }
+
+    .apartmentData__closeButton {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .apartmentData__photo {
+        margin-bottom: 20px;
+    }
+
+    .apartmentData__sliderPhoto,
+    .apartmentData__sliderPhoto img {
+        max-width: 102px;
+        max-height: 102px;
+        width: 102px;
+        height: 102px;
+    }
+
+    .apartmentData__sliderPhoto:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .apartmentData__sliderContainer {
+        margin-right: 47px;
+        margin-left: 47px;
+    }
+
+    .apartmentData__sliderButton {
+        width: 44px;
+        height: 44px;
+        top: calc(50% - 22px);
+    }
+
+    .apartmentData__sliderButton--back {
+        left: 0;
+    }
+
+    .apartmentData__sliderButton--next {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .apartmentData__header {
+        font-size: 20px;
+    }
+
+    .apartmentData__address {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .apartmentData__options {
+        font-size: 14px;
+    }
+
+    .apartmentData__optionData {
+        font-weight: 400;
+    }
+
+    .apartmentData__border {
+        margin: 0 4px;
+        background-size: 10px;
+    }
+
+    .apartmentData__priceNumber {
+        font-size: 20px;
+    }
+
+    .apartmentData__price {
+        margin-bottom: 30px;
+    }
+
+    .apartmentData__buttons button {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apartmentData__inner {
+        padding: 20px;
+    }
+
+    .apartmentData__photo {
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    .apartmentData__sliderPhoto {
+        border-radius: 4px;
+    }
+    .apartmentData__sliderPhoto, .apartmentData__sliderPhoto img {
+        max-width: 60px;
+        max-height: 60px;
+        width:  60px;
+        height:  60px;
+    }
+
+    .apartmentData__sliderPhoto:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .apartmentData__left {
+        margin-bottom: 20px;
+    }
+    .apartmentData__right {
+        padding: 0;
+        box-shadow: none;
+    }
+    .apartmentData__header {
+        max-width: 95%;
+    }
+
+    .apartmentData__id {
+        font-size: 12px;
+    }
+
+    .apartmentData__address {
+        font-size: 12px;
+        margin-bottom: 36px;
+    }
+
+    .apartmentData__options {
+        font-size: 12px;
+    }
+
+
+    .apartmentData__option:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .apartmentData__border {
+        background-size: 8px;
+    }
+    .apartmentData__price {
+        margin-bottom: 24px;
+    }
+
+    .apartmentData__closeButton {
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .apartmentData__sliderContainer {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+    .apartmentData__sliderButton {
+        width: 32px;
+        height: 32px;
+        top: calc(50% - 16px);
+    }
+}

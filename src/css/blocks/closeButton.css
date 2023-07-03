@@ -1,0 +1,98 @@
+.closeButton {
+    cursor: pointer;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white);
+    border-radius: 200px;
+    padding: 0;
+    border: none;
+    flex-shrink: 0;
+    transition: background-color 200ms ease;
+}
+
+.closeButton--shadow {
+    filter: drop-shadow(0px 1px 12px rgba(0, 0, 0, 0.1));
+}
+.closeButton::after, .closeButton::before  {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 16px;
+    height: 1.1px;
+    top: 50%;
+    left: 50%;
+    background-color: var(--black);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: background-color 200ms ease;
+}
+
+.closeButton--smaller {
+    width: 36px;
+    height: 36px;
+}
+
+.closeButton--border {
+    border: 1px solid #292F3B1A;
+}
+
+.closeButton--smaller::after,
+.closeButton--smaller::before {
+    width: 14px;
+}
+
+
+.closeButton::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.closeButton:hover {
+    background-color: var(--black);
+}
+
+.closeButton:hover::after,
+.closeButton:hover::before {
+    background-color: var(--white);
+}
+
+@media screen and (max-width: 950px) {
+    .closeButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .closeButton::after, .closeButton::before  {
+        width: 15px;
+    }
+
+    .closeButton:hover {
+        background-color: var(--white);
+    }
+    
+    .closeButton:hover::after,
+    .closeButton:hover::before {
+        background-color: var(--black);
+    }
+
+    .closeButton:active {
+        background-color: var(--black);
+    }
+    
+    .closeButton:hover:active,
+    .closeButton:hover:active {
+        background-color: var(--white);
+    }
+    
+    
+}
+
+@media screen and (max-width: 480px) {
+    .closeButton {
+        width: 36px;
+        height: 36px;
+    }
+
+    .closeButton::after, .closeButton::before  {
+        width: 14px;
+    }
+}

@@ -1,0 +1,147 @@
+.footer--blue {
+    background-color: var(--blue);
+}
+
+.footer--absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 14px;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.footer__name,
+    .footer__policy,
+    .footer__made {
+        font-family: 'Garet Book', sans-serif;
+        font-size: 14px;
+    }
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__name {
+    margin: 0;
+    text-transform: uppercase;
+    margin-right: 164px;
+    white-space: nowrap;
+}
+
+.footer__policy {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.footer__made {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.footer__made span {
+    font-weight: 400;
+    color: var(--black);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color .2s ease;
+}
+
+.footer__made:hover span {
+    border-bottom: 1px solid var(--black);
+}
+
+.footer__years {
+    font-family: 'Garet Book', sans-serif;
+    display: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .footer__inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer__name {
+        margin-right: 134px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__inner {
+        font-size: 12px;
+        /* padding-bottom: 52px; */
+    }
+
+    .footer__name,
+    .footer__policy,
+    .footer__made {
+        font-size: 12px;
+    }
+
+    .footer__name {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer__name {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 30px;
+    }
+
+    .footer__left {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer__name {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .footer__name span {
+        display: none;
+    }
+    .footer__made {
+        display: none;
+    }
+
+    .footer__years {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .footer__inner {
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer__name,
+    .footer__policy,
+    .footer__years {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,169 @@
+.projectItem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 425px;
+    width: 100%;
+    border-radius: 24px;
+}
+
+.projectItem__imgWrapper {
+    width: 100%;
+}
+
+.projectItem__img {
+    max-width: 425px;
+    height: 386px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 24px;
+}
+
+.projectItem__description {
+    padding: 22px 20px;
+}
+
+.projectItem__geo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.projectItem__geoIcon {
+    width: 11px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.projectItem__geoText {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    color: var(--grey);
+}
+
+.projectItem__title {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 11px 0;
+}
+
+.projectItem__price {
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--gold);
+    margin: 0 0 40px 0;
+}
+
+.projectItem__price::before {
+    content: '$ '
+}
+
+.projectItem__data {
+    display: flex;
+    align-items: center;
+}
+
+.projectItem__dataItem {
+    display: flex;
+    align-items: center;
+}
+
+.projectItem__dataItem:not(:last-child) {
+    margin-right: 32px;
+}
+
+.projectItem__dataIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--blue);
+    border-radius: 200px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.projectItem__dataIcon {
+    width: 22px;
+    height: 16px;
+}
+
+.projectItem__dataIcon--square {
+    width: 18px;
+    height: 18px;
+}
+
+.projectItem__dataText {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .projectItem {
+        max-width: 413px;
+    }
+
+    .projectItem__img {
+        max-width: 413px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .projectItem {
+        max-width: 317px;
+        border-radius: 16px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .projectItem__img {
+        max-width: 317px;
+        height: 255px;
+        border-radius: 16px;
+    }
+
+    .projectItem__description {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .projectItem__geoIcon {
+        width: 9px;
+        height: 12px;
+        margin-right: 6px;
+    }
+    .projectItem__geoText {
+        font-size: 12px;
+    }
+
+    .projectItem__title {
+        font-size: 18px;
+    }
+
+    .projectItem__price {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .projectItem__dataIconWrapper {
+        width: 32px;
+        height: 32px;
+    }
+
+    .projectItem__dataIcon {
+        width: 15.6px;
+        height: 12px;
+    }
+
+    .projectItem__dataIcon--square {
+        width: 14.4px;
+        height: 14.4px;
+    }
+
+    .projectItem__dataText {
+        font-size: 14px;
+    }
+}

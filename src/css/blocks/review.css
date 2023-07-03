@@ -1,0 +1,158 @@
+.review {
+    max-width: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.review__inner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream-white);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.review__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--cream);
+}
+
+.review__personData {
+    display: flex;
+    align-items: center;
+}
+
+.review__imgWrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 200px;
+    border: 1px solid var(--white);
+    margin-right: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.review__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.review__date {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--black);
+    margin: 4px 0 0 0;
+}
+
+.review__text {
+    background-color: var(--cream-white);
+    padding: 25px;
+    max-height: 685px;
+}
+
+.review__text .simplebar-scrollbar::before {
+    background-color: var(--gold);
+    opacity: 1 !important;
+    border-radius: 3px;
+    width: 6px;
+    right: 0;
+    left: unset;
+}
+
+.review__text p {
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--black);
+    margin: 0;
+}
+
+.review__text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .review {
+        max-width: 600px;
+    }
+
+    .review__inner {
+        border-radius: 8px;
+    }
+    
+    .review__top {
+        padding: 20px;
+    }
+    
+    .review__imgWrapper {
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+    }
+
+    .review__date {
+        font-size: 14px;
+    }
+    
+    .review__name {
+        font-size: 16px;
+    }
+    
+    .review__text {
+        padding: 20px;
+        max-height: 564px;
+    }
+    
+    .review__text .simplebar-scrollbar::before {
+        width: 4px;
+    }
+    
+    .review__text p {
+        font-size: 14px;
+    }
+    
+    .review__text p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .review {
+        max-width: 90%;
+    }
+    
+    .review__imgWrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .review__date {
+        font-size: 12px;
+    }
+    
+    .review__name {
+        font-size: 14px;
+    }
+    
+    .review__text {
+        max-height: 610px;
+        max-height: calc(var(--vh) - 114px);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .review {
+        max-width: 315px;
+    }
+}

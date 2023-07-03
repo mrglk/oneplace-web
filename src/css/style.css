@@ -1,0 +1,210 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+@import "vars.css";
+
+@import "blocks/button.css";
+@import "blocks/burgerMenu.css";
+@import "blocks/container.css";
+@import "blocks/animatedButton.css";
+@import "blocks/filterButton.css";
+@import "blocks/arrowButton.css";
+@import "blocks/sliderButton.css";
+@import "blocks/slider.css";
+@import "blocks/modals.css";
+@import "blocks/closeButton.css";
+@import "blocks/swiper.css";
+@import "blocks/overlay.css";
+@import "blocks/select.css";
+@import "blocks/selectWrapper.css";
+@import "blocks/form.css";
+@import "blocks/projectItem.css";
+@import "blocks/apartmentData.css";
+@import "blocks/currencySelect.css";
+@import "blocks/getForm.css";
+@import "blocks/article.css";
+@import "blocks/review.css";
+@import "blocks/mapItem.css";
+@import "blocks/planetItem.css";
+@import "blocks/thanks.css";
+@import "blocks/image.css";
+@import "blocks/lines.css";
+@import "blocks/title.css";
+@import "blocks/mouse.css";
+
+@import "components/Quiz.css";
+@import "components/Step.css";
+@import "components/Navigation.css";
+@import "components/Option.css";
+@import "components/QuizForm.css";
+
+@import "sections/header.css";
+@import "sections/footer.css";
+@import "sections/firstScreen.css";
+@import "sections/projects.css";
+@import "sections/about.css";
+@import "sections/founders.css";
+@import "sections/offer.css";
+@import "sections/planet.css";
+@import "sections/advantages.css";
+@import "sections/map.css";
+@import "sections/news.css";
+@import "sections/reviews.css";
+@import "sections/faq.css";
+@import "sections/contacts.css";
+@import "sections/preloader.css";
+@import "sections/thanksPage.css";
+
+* {
+    box-sizing: border-box;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* font-size: 16px; */
+    font-family: var(--general-font);
+    font-weight: 400;
+    background-color: var(--cream-white);
+    color: var(--black);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* form {
+    width: 100%;
+  }
+   */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 46px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1700px) {
+    h1 {
+        font-size: 62px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 58px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+.iti__flag {background-image: url(".img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti__flag {background-image: url("./img/flags@2x.png");}
+}
+
+.iti__selected-flag {
+    font-family: 'Garet', sans-serif;
+    background-color: transparent !important;
+    font-size: 18px;
+    margin-left: 40px;
+    padding: 0 !important;
+    width: 95px;
+}
+
+@media screen and (max-width: 950px) {
+    .iti__selected-flag {
+        font-size: 14px;
+        margin-left: 10px;
+        width: 55px;
+    }
+}
+
+.iti {
+    /*width: 100%;*/
+}
+
+.iti__country-list {
+    min-width: 300px;
+}
+
+.iti__country-name {
+    /* margin-right: 6px; */
+    /*text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*max-width: 263px;*/
+    /*padding-right: 10px;*/
+}
+
+.iti__country-list {
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    border-color: var(--gold) !important;
+}
+
+input[data-validation="phone"] {
+    /*padding-left: 140px;*/
+}

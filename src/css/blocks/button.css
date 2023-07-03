@@ -1,0 +1,95 @@
+.buttonWrapper {
+    border-radius: 60px;
+}
+
+.buttonWrapper--border {
+    border: 1px solid rgba(41, 47, 59, 0.5);
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    text-decoration: none;
+
+    font-family: var(--generalFont);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+
+    color: var(--white);
+    border: none;
+
+    /* max-width: 340px; */
+    width: 100%;
+    padding: 30px 20px;
+    background-color: var(--gold);
+    transition: background-color 300ms ease;
+
+    flex-shrink: 0;
+}
+
+.button--white {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.button--black {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.button span {
+    font-size: 14px;
+    color:  #292F3B66;
+    margin-left: 5px;
+}
+
+.button:hover span {
+    color:  #FFFFFF66;
+}
+
+.button:hover .button__icon {
+    fill: var(--white);
+}
+
+.button__icon {
+    width: 12px;
+    height: 14px;
+    margin-left: 15px;
+    fill: var(--black);
+}
+
+@media screen and (max-width: 1700px) {
+    .button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .buttonWrapper {
+        border-radius: 50px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .button span {
+        font-size: 12px;
+    }
+
+    .button:hover span {
+        color:  #292F3B66;
+    }
+    
+    .button:hover .button__icon {
+        fill: var(--black);
+    }
+}

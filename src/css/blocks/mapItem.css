@@ -1,0 +1,162 @@
+.mapItem {
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 200ms ease;
+    background-color: var(--white);
+    border-radius: 24px;
+}
+
+.mapItem--active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mapItem__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    padding: 16px 16px 48px 16px;
+}
+
+.mapItem__imgWrapper {
+    max-width: 368px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+.mapItem__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 25px 40px 40px 40px; */
+}
+
+.mapItem__header {
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 30px 0;
+}
+
+.mapItem__description {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapItem__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mapItem__cell:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.mapItem__subtitle {
+    opacity: 0.4;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+}
+
+.mapItem__data {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1700px) {
+    .mapItem {
+        max-width: 362px;
+        border-radius: 24px;
+    }
+
+    .mapItem__inner {
+        padding: 15px 15px 38px 15px;
+    }
+
+    .mapItem__imgWrapper {
+        max-width: 332px;
+    }
+
+
+    .mapItem__header {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 950px) {
+    .mapItem {
+        max-width: 234px;
+        border-radius: 16px;
+    }
+
+    .mapItem__inner {
+        padding: 16px 12px 16px 12px;
+    }
+
+    .mapItem__imgWrapper {
+        max-width: 210px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    .mapItem__header {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .mapItem__cell:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .mapItem__subtitle {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .mapItem__data {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .mapItem {
+        max-width: 198px;
+    }
+
+    .mapItem__inner {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .mapItem__imgWrapper {
+        max-width: 178px;
+    }
+
+    .mapItem__header {
+        font-size: 14px;
+    }
+
+
+    .mapItem__subtitle {
+        font-size: 10px;
+    }
+
+    .mapItem__data {
+        font-size: 10px;
+    }
+}

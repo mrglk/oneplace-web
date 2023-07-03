@@ -1,0 +1,11 @@
+.title {
+    overflow: hidden;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 600ms ease 400ms, opacity 600ms ease 400ms;
+}
+
+.title--shown  {
+    opacity: 1;
+    transform: translateY(0);
+}
