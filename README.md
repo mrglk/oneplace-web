@@ -10,7 +10,7 @@
 
 ### Сайт
 
-oneplacedubai.com
+[oneplacedubai.com](https://oneplacedubai.com/)
 
 ### Используемые технологии:
 
